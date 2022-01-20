@@ -5,7 +5,7 @@ class QualitiesDesktop extends Component {
     render() {
       return (
         <div>
-            <div style={{marginTop: '5vh'}}>
+            <div style={{marginTop: '40px'}}>
                 
             <h2 className='oswald'
                     style={{
@@ -17,87 +17,49 @@ class QualitiesDesktop extends Component {
                 Свойства
                 </h2>
                 
-                {/* Features */}
+                {/* Qualities 1st line */}
                 <div style={{
                     // display: 'inline-block',
                     marginBottom:'50px',
                     marginTop: '24px',
                     justifyContent: 'center',
                     display: 'flex',
-                    backgroundColor: 'gray'
+                    // backgroundColor: 'gray'
                 }}>
 
                     {/* Element1 */}
-                    <QualityElement />
+                    <QualityElement name={'Полезно'} text={'Только натуральные продукты'}/>
 
                     {/* Feature2 */}
-                    <div style={{
-                        display: 'inline-block',
-                        marginLeft: '2vw',
-                        marginRight:'2vw'
-                    }}>
-
-                        <h5
-                        style={{
-                            fontSize: '18px',
-                            lineHeight:'33px',
-                            textAlign: 'center',
-                        }}>
-                            Премиальное качество
-                        </h5>
-
-                        <p
-                        style={{
-                            width: '290px',
-                            lineHeight: '150%',
-                            textAlign: 'center',
-                            fontSize: '16px'
-                        }}
-                        >
-                            Использование только 
-                            натуральных и лучших 
-                            ингредиентов делает торты 
-                            не только самыми 
-                            красивыми, а и самыми 
-                            полезными и вкусными в 
-                            Украине и Европе
-                        </p>
-
-                    </div>
+                    <QualityElement name={'Вкусно'} text={'Вкуснее чем еда твоей мамы'}/>
 
                     {/* Feature3 */}
-                    <div style={{
-                        display: 'inline-block',
-                        marginLeft: '2vw',
-                        marginRight:'2vw'
-                    }}>
+                    <QualityElement name={'Сытно'} text={'Наешься даже кусочком'}/>
 
-                        <h5
-                        style={{
-                            fontSize: '18px',
-                            lineHeight:'33px',
-                            textAlign: 'center',
-                        }}>
-                            Креативность
-                        </h5>
 
-                        <p
-                        style={{
-                            width: '290px',
-                            lineHeight: '150%',
-                            textAlign: 'center',
-                            fontSize: '16px'
-                        }}
-                        >
-                            Хочется чего-то 
-                            удивительного, но не 
-                            уверен что именно? Дай 
-                            полную свободу нашей 
-                            команде и будешь удивлен 
-                            в двойне!
-                        </p>
+                </div>
 
-                    </div>
+                {/* Qualities 2st line */}
+                <div style={{
+                    // display: 'inline-block',
+                    marginBottom:'50px',
+                    marginTop: '24px',
+                    justifyContent: 'center',
+                    display: 'flex',
+                    // backgroundColor: 'gray'
+                }}>
+
+                    {/* Element1 */}
+                    <QualityElement name={'Многоэтажный'} text={'Хрущев бы удивился'}/>
+
+                    {/* Feature2 */}
+                    <QualityElement name={'Захватывающе'} text={'Пусть все завидуют'}/>
+
+                    {/* Feature3 */}
+                    <QualityElement name={'Необычно'} text={'Такого вы ещё не видели'}/>
+
+                    {/* Feature4 */}
+                    <QualityElement name={'Нежный'} text={'Нежнее чем Джонсон Бэби'}/>
 
 
                 </div>

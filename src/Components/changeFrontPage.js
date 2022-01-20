@@ -41,7 +41,7 @@ export default function ChangeFrontPage() {
     
 
     return(
-        <div style={{marginTop: '50px'}}>
+        <div style={{marginTop: '50px',}}>
 
 
         {/* {transitions((open) => ( */}
@@ -55,7 +55,8 @@ export default function ChangeFrontPage() {
                 // display: 'block', 
                 // marginLeft: 'auto', marginRight: 'auto', 
                 // height: '600px',
-                position: 'absolute', left: 0,
+                position: 'absolute', 
+                left: 0,
                 height: '87.5vh'
                 // height: open ? '50vh': '75vh'
                 }}
@@ -74,7 +75,8 @@ export default function ChangeFrontPage() {
                     style={{
                     // display: 'block', 
                     // marginLeft: 'auto', marginRight: 'auto', 
-                    position: 'absolute', left: 0,
+                    position: 'absolute', 
+                    left: 0,
                     height: '87.5vh'
                     // height: '600px'
                     }}

@@ -9,7 +9,7 @@ class CakesDesktop extends Component {
     render() {
       return (
         <div>
-            <div style={{marginTop: '5vh'}}>
+            <div style={{marginTop: '40px'}}>
                 
             <h2 className='oswald'
                     style={{
@@ -38,6 +38,7 @@ class CakesDesktop extends Component {
                         boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
                         borderRadius: '15px',
                         WebkitBackdropFilter: 'blur(10px)',
+                        backdropFilter:'blur(10px)',
                         marginRight: '2vw',
                         marginLeft: '2vw',
                     }}>
@@ -86,6 +87,7 @@ class CakesDesktop extends Component {
                         boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
                         borderRadius: '15px',
                         WebkitBackdropFilter: 'blur(10px)',
+                        backdropFilter:'blur(10px)',
                         marginRight: '2vw',
                         marginLeft: '2vw',
                     }}>
@@ -133,6 +135,7 @@ class CakesDesktop extends Component {
                         boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
                         borderRadius: '15px',
                         WebkitBackdropFilter: 'blur(10px)',
+                        backdropFilter:'blur(10px)',
                         marginRight: '2vw',
                         marginLeft: '2vw',
                     }}>
@@ -181,6 +184,7 @@ class CakesDesktop extends Component {
                         boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
                         borderRadius: '15px',
                         WebkitBackdropFilter: 'blur(10px)',
+                        backdropFilter:'blur(10px)',
                         marginRight: '2vw',
                         marginLeft: '2vw',
                     }}>
