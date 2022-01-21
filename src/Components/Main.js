@@ -3,12 +3,28 @@ import React, { Component } from 'react';
 import ChangeFrontPage from './changeFrontPage.js';
 import ChangeFrontImage1 from './changeFrontImage1.js';
 import ChangeFrontImage2 from './changeFrontImage2.js';
+import bgItem2 from '../images/bgItem2.png';
 
 import DescriptionFrontPageDesktop from './descriptionFrontPageDesktop.js';
 import AboutUsDesktop from './AboutUsDesktop';
 import CakesDesktop from './CakesDesktop';
 import FeaturesDesktop from './FeaturesDesktop';
 import QualitiesDesktop from './QualitiesDesktop';
+import ExamplesDesktop from './ExamplesDesktop';
+import TypesDesktop from './TypesDesktop';
+import ForWhoDesktop from './ForWhoDesktop';
+import MoreDesktop from './MoreDesktop';
+import PaymentDesktop from './PaymentDesktop';
+import FooterDesktop from './FooterDesktop';
+import BGPics from './BGPics';
+
+//rcc - for fast class creation
+
+//todo
+//ForWho Cards - make them alive, maybe click or hover
+//Свойства - добавить открытие этой штуки на наведение и туда влить воды и описание
+// for who animate on hover
+//priced add from and to
 
 class Main extends Component {
   render() {
@@ -36,11 +52,25 @@ class Main extends Component {
           
           <AboutUsDesktop />
 
+          <BGPics />
+
           <CakesDesktop />
 
           <FeaturesDesktop />
           
           <QualitiesDesktop />
+
+          <ExamplesDesktop />
+
+          <TypesDesktop />
+
+          <ForWhoDesktop />
+
+          <MoreDesktop />
+
+          <PaymentDesktop />
+
+          <FooterDesktop />
 
         </div>
       </div>

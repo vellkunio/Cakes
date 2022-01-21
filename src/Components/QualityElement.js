@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 
 class QualityElement extends Component {
     render() {
+        const {
+             name, text,
+        } = this.props
       return (
         <div>
             <div style={{
-                width: '284px',
+                width: '270px',
                 height: '100px',
+                marginLeft: '30px',
+                marginRight: '30px',
                 borderRadius: '25px',
                 WebkitBackdropFilter: 'blur(25px)',
+                backdropFilter:'blur(25px)',
                 background: 'rgba(255, 255, 255, 0.15)',
                 border: '1px solid rgba(255, 255, 255, 50)',
                 // borderImage: 'linear-gradient(to right, red, blue) 27 100%'
@@ -19,12 +25,12 @@ class QualityElement extends Component {
                
                <h6 style={{
                    marginTop: '16px',
-                   fontSize: '20px',
+                   fontSize: '18px',
                    lineHeight: '25px',
                    textAlign: 'center',
                    marginBottom: '0px'
                }}>
-                   Полезно
+                   {name}
                </h6>
 
                <p style={{
@@ -36,7 +42,7 @@ class QualityElement extends Component {
                    lineHeight: '19px',
                    color: 'rgba(0, 0, 0, 0.5)',
                }}>
-                   Только натуральные продукты
+                   {text}
                </p>
 
             </div>

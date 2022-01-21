@@ -9,7 +9,7 @@ class CakesDesktop extends Component {
     render() {
       return (
         <div>
-            <div style={{marginTop: '5vh'}}>
+            <div style={{marginTop: '64px'}}>
                 
             <h2 className='oswald'
                     style={{
@@ -25,7 +25,7 @@ class CakesDesktop extends Component {
                 <div style={{
                     // display: 'inline-block',
                     marginBottom:'50px',
-                    marginTop: '24px',
+                    marginTop: '8px',
                     justifyContent: 'center',
                     display: 'flex',
                 }}>
@@ -34,7 +34,8 @@ class CakesDesktop extends Component {
                     <div style={{
                         display: 'inline-block',
                         marginLeft: '2vw',
-                        marginRight:'2vw'
+                        marginRight:'2vw',
+                        marginTop: '0px'
                         
                     }}>
 
@@ -43,6 +44,7 @@ class CakesDesktop extends Component {
                             fontSize: '18px',
                             lineHeight:'33px',
                             textAlign: 'center',
+                            marginBottom: '0px'
                         }}>
                             Эксклюзивность
                         </h5>
@@ -75,6 +77,7 @@ class CakesDesktop extends Component {
                             fontSize: '18px',
                             lineHeight:'33px',
                             textAlign: 'center',
+                            marginBottom: '0px'
                         }}>
                             Премиальное качество
                         </h5>
@@ -110,6 +113,7 @@ class CakesDesktop extends Component {
                             fontSize: '18px',
                             lineHeight:'33px',
                             textAlign: 'center',
+                            marginBottom: '0px'
                         }}>
                             Креативность
                         </h5>
