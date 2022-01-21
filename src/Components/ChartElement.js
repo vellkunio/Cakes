@@ -27,6 +27,7 @@ export default class ChartElement extends Component {
                         transform: `rotate(${transform}deg)`,
                         fontSize: '18px',
                         WebkitBackdropFilter: 'blur(5px)',
+                        border: '1px solid rgba(103, 104, 171, 0.1)'
                         // backdropFilter: 'blur(1px)',
                         
                     }}

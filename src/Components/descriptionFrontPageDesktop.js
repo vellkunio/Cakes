@@ -10,7 +10,7 @@ export default function DescriptionFrontPageDesktop() {
       enter: { opacity: 1 },
       leave: { opacity: 0 },
       reverse: toggle,
-      delay: 2000,
+      // delay: 2000,
       config: config.molasses,
       onRest: () => set(!toggle),
     })

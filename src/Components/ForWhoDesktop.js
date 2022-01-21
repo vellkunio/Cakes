@@ -27,33 +27,33 @@ export default class ForWhoDesktop extends Component {
                     name={"Мужу"}
                     BGcolor={pink}
                     color={'black'}
-                    marginTop={'0px'}
+                    marginTop={'-40px'}
                     marginBottom={''}
                     marginLeft={'500px'}
                     marginRight={''}
-                    transform={'30'}
+                    transform={'-8'}
                     />
 
                     <ChartElement 
                     name={"Жене"}
-                    BGcolor={pink}
+                    BGcolor={blue}
                     color={'black'}
                     marginTop={'120px'}
                     marginBottom={''}
                     marginLeft={'350px'}
                     marginRight={''}
-                    transform={'30'}
+                    transform={'-10'}
                     />
 
                     <ChartElement 
                     name={"Родителям"}
-                    BGcolor={pink}
+                    BGcolor={green}
                     color={'black'}
                     marginTop={'-40px'}
                     marginBottom={''}
                     marginLeft={'200px'}
                     marginRight={''}
-                    transform={'30'}
+                    transform={'8'}
                     />
                     <ChartElement 
                     name={"Детям"}
@@ -63,17 +63,17 @@ export default class ForWhoDesktop extends Component {
                     marginBottom={''}
                     marginLeft={'80px'}
                     marginRight={''}
-                    transform={'30'}
+                    transform={'-4'}
                     />
                     <ChartElement 
                     name={"Родственникам"}
                     BGcolor={blue}
                     color={'black'}
-                    marginTop={'180px'}
+                    marginTop={'190px'}
                     marginBottom={''}
                     marginLeft={'80px'}
                     marginRight={''}
-                    transform={'15'}
+                    transform={'10'}
                     />
 
                     <ChartElement 
@@ -84,28 +84,28 @@ export default class ForWhoDesktop extends Component {
                     marginBottom={''}
                     marginLeft={'-100px'}
                     marginRight={''}
-                    transform={'0'}
+                    transform={'4'}
                     />
                     
                     <ChartElement 
                     name={"Знакомому"}
-                    BGcolor={green}
+                    BGcolor={blue}
                     color={'black'}
                     marginTop={'0px'}
                     marginBottom={''}
                     marginLeft={'-300px'}
                     marginRight={''}
-                    transform={'-30'}
+                    transform={'-12'}
                     />
                     <ChartElement 
                     name={"Учителю"}
-                    BGcolor={green}
-                    color={'black'}
+                    BGcolor={blue}
+                    color={'grey'}
                     marginTop={'40px'}
                     marginBottom={''}
                     marginLeft={'-600px'}
                     marginRight={''}
-                    transform={'-15'}
+                    transform={'4'}
                     />
                     <ChartElement 
                     name={"Особый повод"}
@@ -115,27 +115,27 @@ export default class ForWhoDesktop extends Component {
                     marginBottom={''}
                     marginLeft={'-350px'}
                     marginRight={''}
-                    transform={'15'}
+                    transform={'-4'}
                     />
                     <ChartElement 
                     name={"Подруге"}
-                    BGcolor={green}
+                    BGcolor={pink}
                     color={'black'}
                     marginTop={'120px'}
                     marginBottom={''}
                     marginLeft={'-300px'}
                     marginRight={''}
-                    transform={'0'}
+                    transform={'2'}
                     />
                     <ChartElement 
                     name={"Коллеге"}
-                    BGcolor={green}
-                    color={'black'}
+                    BGcolor={blue}
+                    color={'grey'}
                     marginTop={'250px'}
                     marginBottom={''}
                     marginLeft={'-550px'}
                     marginRight={''}
-                    transform={'15'}
+                    transform={'4'}
                     />
                     <ChartElement 
                     name={"Знакомой"}
@@ -148,7 +148,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'0'}
                     />
                     <ChartElement 
-                    name={"Корпоратива"}
+                    name={"Корпоратив"}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'150px'}
@@ -159,13 +159,13 @@ export default class ForWhoDesktop extends Component {
                     />
                     <ChartElement 
                     name={"Юбилея"}
-                    BGcolor={green}
+                    BGcolor={pink}
                     color={'black'}
                     marginTop={'200px'}
                     marginBottom={''}
                     marginLeft={'520px'}
                     marginRight={''}
-                    transform={'-8'}
+                    transform={'0'}
                     />
                     <ChartElement 
                     name={"Определения пола ребенка"}
@@ -179,7 +179,7 @@ export default class ForWhoDesktop extends Component {
                     />
                     <ChartElement 
                     name={"Мальчика"}
-                    BGcolor={green}
+                    BGcolor={pink}
                     color={'black'}
                     marginTop={'280px'}
                     marginBottom={''}

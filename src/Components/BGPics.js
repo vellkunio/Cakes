@@ -26,7 +26,7 @@ export default class BGPics extends Component {
                 style={{
                     position: 'absolute',
                     width: '650px',
-                    marginTop: '670px',
+                    marginTop: '690px',
                     left: '0px',
                     zIndex: '-5'
                 }}

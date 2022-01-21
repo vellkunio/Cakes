@@ -53,7 +53,8 @@ export default class MoreDesktop extends Component {
                         можете ознакомиться с 
                         ценами на уже сделанные 
                         ранее тортики в нашем 
-                        инстаграм
+                        инстаграм, которые 
+                        начинаются от 100$
                     </p>
 
                     <h2 className='oswald'
@@ -67,11 +68,12 @@ export default class MoreDesktop extends Component {
 
                     <div
                     style={{
-                        alignItems: 'center', borderRadius: '15px', backgroundColor: '#E2C0BF',
+                        alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
                         paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', fontSize: '18px',
-                        marginLeft: '100px', marginRight: '100px',  marginBottom: '32px', WebkitBackdropFilter: 'blur(15px)',
+                        marginLeft: '100px', marginRight: '100px',  marginBottom: '32px', 
+                        WebkitBackdropFilter: 'blur(15px)', border: '1px solid rgba(247, 207, 186, 1)',
                     }}
                     >
                     <p
@@ -86,11 +88,11 @@ export default class MoreDesktop extends Component {
 
                     <div
                     style={{
-                        alignItems: 'center', borderRadius: '15px', backgroundColor: '#E2C0BF',
+                        alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
                         paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', WebkitBackdropFilter: 'blur(15px)',
-                        marginRight: '16px'
+                        marginRight: '16px', border: '1px solid rgba(247, 207, 186, 1)',
                     }}
                     >
                     <p
@@ -105,11 +107,11 @@ export default class MoreDesktop extends Component {
 
                     <div
                     style={{
-                        alignItems: 'center', borderRadius: '15px', backgroundColor: '#E2C0BF',
+                        alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
                         paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', WebkitBackdropFilter: 'blur(15px)',
-                        marginLeft: '16px'
+                        marginLeft: '16px', border: '1px solid rgba(247, 207, 186, 1)',
                     }}
                     >
                     <p
@@ -211,7 +213,7 @@ export default class MoreDesktop extends Component {
                 <p
                             style={{
                                 width: '155px', textAlign: 'center', fontSize: '16px',
-                                marginLeft: 'auto', marginRight: 'auto', marginTop: '48px', marginBottom: '0px'
+                                marginLeft: 'auto', marginRight: 'auto', marginTop: '75px', marginBottom: '0px'
                             }}
                             >
                                 В соц. сетях
