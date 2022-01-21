@@ -15,20 +15,21 @@ export default function ChangeFrontPage() {
     const styles1 = useSpring({
         loop: { reverse: true },
         from: { x: 0, y: 0, opacity: '100%', transform: 'scale(1)' },
-        to: { x: 300, y: 100, opacity: '75%', transform: 'scale(0.75)' },
+        to: { x: 400, y: 100, opacity: '50%', transform: 'scale(0.75)' },
         // from: { x: 0, opacity: '100%' },
         // to: { x: 400, opacity: '75%' },
-        delay: 3000,
-        zIndex: '1',
+        delay: 5000,
+        // zIndex: 3,
         // zIndex: '1'
         // config: { duration: 500 }
-      })
+      },
+      );
 
     const styles2 = useSpring({
         loop: { reverse: true },
-        from: { x: 300, y: 100, opacity: '75%', transform: 'scale(0.75)' },
+        from: { x: 400, y: 100, opacity: '50%', transform: 'scale(0.75)' },
         to: { x: 0, y: 0, opacity: '100%', transform: 'scale(1)' },
-        delay: 3000,
+        delay: 5000,
         // zIndex: '0'
         // config: { duration: 500 }
       })
@@ -41,7 +42,7 @@ export default function ChangeFrontPage() {
     
 
     return(
-        <div style={{marginTop: '50px',}}>
+        <div style={{marginTop: '-150px',}}>
 
 
         {/* {transitions((open) => ( */}
@@ -57,7 +58,7 @@ export default function ChangeFrontPage() {
                 // height: '600px',
                 position: 'absolute', 
                 left: 0,
-                height: '87.5vh'
+                height: '87.5vh',
                 // height: open ? '50vh': '75vh'
                 }}
             />

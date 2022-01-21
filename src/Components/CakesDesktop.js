@@ -3,20 +3,11 @@ import hearts from '../images/hearts.png'
 import ghost from '../images/ghost.png'
 import girl from '../images/girl.png'
 import boy from '../images/boy.png'
-
-// import { useSpring, animated, config } from "@react-spring/web";
+import CardCakeDesktop from './CardCakeDesktop';
 
 
 class CakesDesktop extends Component {
     render() {
-
-        // const calc = (x, y, rect) => [
-        //     -(y - rect.top - rect.height / 2) / 5,
-        //     (x - rect.left - rect.width / 2) / 5,
-        //     1.4
-        //   ];
-        //   const trans = (x, y, s) =>
-        //     `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
       return (
         <div>
@@ -36,203 +27,21 @@ class CakesDesktop extends Component {
                 <div style={{
                     display: 'inline-block',
                     // marginBottom:'50px',
-                    marginTop: '24px'
+                    marginTop: '40px'
                 }}>
 
-                    {/* Cake1 */}
-                    <div style={{
-                        display: 'inline-block',
-                        height: '255px',
-                        width: '200px',
-                        background: 'rgba(255, 255, 255, 0.5)',
-                        border: '1px solid rgba(255, 255, 255, 0.5)',
-                        boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
-                        borderRadius: '15px',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        backdropFilter:'blur(10px)',
-                        marginRight: '2vw',
-                        marginLeft: '2vw',
-                        willChange:'transform'
-                    }}>
+                    <CardCakeDesktop name={'Свадебный'} image={hearts} text={`Идеальный торт для 
+                            самого важного события в жизни двух сердец`}/>
 
-                        <h3
-                        style={{
-                            margin: '0px',
-                            marginTop: '24px',
-                            fontSize: '16px',
-                            fontWeight: 'bold'
-                        }}>Свадебный</h3>
+                    <CardCakeDesktop name={'Детский'} image={ghost} text={`Что может быть 
+                            лучше чем счастливая улыбка ребенка?`}/>
 
-                        <img
-                        src={hearts} alt="Hearts"
-                            style={{
-                                // width: '50px',
-                                height: '75px',
-                                marginTop: '16px'
-                            }}
-                        />
+                    <CardCakeDesktop name={'Женский'} image={girl} text={`Любая девушка 
+                            будет в восторге от подарка сделанного специально для неё`}/>
 
-                        <p
-                        style={{
-                            fontSize: '12px',
-                            lineHeight: '19px',
-                            textAlign: 'center',
-                            width: '170px',
-                            marginLeft:'auto',
-                            marginRight: 'auto',
-                        }}>
-                            Идеальный торт для 
-                            самого важного 
-                            события в жизни 
-                            двух сердец
-                        </p>
-                    </div>
+                    <CardCakeDesktop name={'Мужской'} image={boy} text={`По-настоящему 
+                            солидный и раскошый торт для мужчин`}/>
 
-
-                    {/* Cake2 */}
-                    <div style={{
-                        display: 'inline-block',
-                        height: '255px',
-                        width: '200px',
-                        background: 'rgba(255, 255, 255, 0.5)',
-                        border: '1px solid rgba(255, 255, 255, 0.5)',
-                        boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
-                        borderRadius: '15px',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        backdropFilter:'blur(10px)',
-                        marginRight: '2vw',
-                        marginLeft: '2vw',
-                    }}>
-
-                        <h3
-                        style={{
-                            margin: '0px',
-                            marginTop: '24px',
-                            fontSize: '16px',
-                            fontWeight: 'bold'
-                        }}>Детский</h3>
-
-                        <img
-                        src={ghost} alt="Ghost"
-                            style={{
-                                height: '75px',
-                                marginTop: '16px'
-                            }}
-                        />
-
-                        <p
-                        style={{
-                            fontSize: '12px',
-                            lineHeight: '19px',
-                            textAlign: 'center',
-                            width: '170px',
-                            marginLeft:'auto',
-                            marginRight: 'auto',
-                        }}>
-                            Что может быть 
-                            лучше чем 
-                            счастливая улыбка 
-                            ребенка?
-                        </p>
-                    </div>
-
-
-                    {/* Cake3 */}
-                    <div style={{
-                        display: 'inline-block',
-                        height: '255px',
-                        width: '200px',
-                        background: 'rgba(255, 255, 255, 0.5)',
-                        border: '1px solid rgba(255, 255, 255, 0.5)',
-                        boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
-                        borderRadius: '15px',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        backdropFilter:'blur(10px)',
-                        marginRight: '2vw',
-                        marginLeft: '2vw',
-                    }}>
-
-                        <h3
-                        style={{
-                            margin: '0px',
-                            marginTop: '24px',
-                            fontSize: '16px',
-                            fontWeight: 'bold'
-                        }}>Женский</h3>
-
-                        <img
-                        src={girl} alt="Girl"
-                            style={{
-                                height: '75px',
-                                marginTop: '16px',
-                                marginLeft: '15px'
-                            }}
-                        />
-
-                        <p
-                        style={{
-                            fontSize: '12px',
-                            lineHeight: '19px',
-                            textAlign: 'center',
-                            width: '170px',
-                            marginLeft:'auto',
-                            marginRight: 'auto',
-                        }}>
-                            Любая девушка 
-                            будет в восторге от 
-                            подарка сделанного 
-                            специально для неё
-                        </p>
-                    </div>
-
-
-                    {/* Cake4 */}
-                    <div style={{
-                        display: 'inline-block',
-                        height: '255px',
-                        width: '200px',
-                        background: 'rgba(255, 255, 255, 0.5)',
-                        border: '1px solid rgba(255, 255, 255, 0.5)',
-                        boxShadow: '2px 4px 6px rgba(0, 0, 0, 0.25)',
-                        borderRadius: '15px',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        backdropFilter:'blur(10px)',
-                        marginRight: '2vw',
-                        marginLeft: '2vw',
-                    }}>
-
-                        <h3
-                        style={{
-                            margin: '0px',
-                            marginTop: '24px',
-                            fontSize: '16px',
-                            fontWeight: 'bold'
-                        }}>Мужской</h3>
-
-                        <img
-                        src={boy} alt="Boy"
-                            style={{
-                                height: '75px',
-                                marginTop: '16px',
-                                marginLeft: '15px'
-                            }}
-                        />
-
-                        <p
-                        style={{
-                            fontSize: '12px',
-                            lineHeight: '19px',
-                            textAlign: 'center',
-                            width: '170px',
-                            marginLeft:'auto',
-                            marginRight: 'auto',
-                        }}>
-                            По-настоящему 
-                            солидный и 
-                            раскошый торт для 
-                            мужчин
-                        </p>
-                    </div>
 
                 </div>
 

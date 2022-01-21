@@ -4,7 +4,7 @@ class AboutUsDesktop extends Component {
     render() {
       return (
         <div>
-            <div style={{marginTop: '80vh'}}>
+            <div style={{marginTop: '100vh'}}>
                 <h2 className='oswald'
                     style={{
                         letterSpacing: '0.15em',

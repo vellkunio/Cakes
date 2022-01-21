@@ -21,7 +21,7 @@ class QualitiesDesktop extends Component {
                 <div style={{
                     // display: 'inline-block',
                     marginBottom:'50px',
-                    marginTop: '24px',
+                    marginTop: '40px',
                     justifyContent: 'center',
                     display: 'flex',
                     // backgroundColor: 'gray'

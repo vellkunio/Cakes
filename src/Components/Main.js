@@ -17,14 +17,19 @@ import MoreDesktop from './MoreDesktop';
 import PaymentDesktop from './PaymentDesktop';
 import FooterDesktop from './FooterDesktop';
 import BGPics from './BGPics';
+import CompanyName from './CompanyName';
 
 //rcc - for fast class creation
 
 //todo
-//ForWho Cards - make them alive, maybe click or hover
-//Свойства - добавить открытие этой штуки на наведение и туда влить воды и описание
-// for who animate on hover
-//priced add from and to
+//ForWho Cards - make them alive, maybe click or hover                                  Done
+//Свойства - добавить открытие этой штуки на наведение и туда влить воды и описание     Under Review
+// for who animate on hover                                                             Under Review
+//priced add from and to                                                                Done
+//спейсинги между названиями глав                                                       
+//add scroll effect when press More                                                     
+//add actions for contact us buttons                                                    
+//lower down Name of th company                                                         Done
 
 class Main extends Component {
   render() {
@@ -34,21 +39,28 @@ class Main extends Component {
           {/* <ChangeFrontImage2 styles={{zIndex: '10'}} /> */}
           {/* <ChangeFrontImage1 styles={{zIndex: '1'}}/> */}
           
-          <ChangeFrontPage />
-          <DescriptionFrontPageDesktop />
+          
 
-          <h1 className='oswald'
+          {/* <h1 className='oswald'
             style={{
               display: 'block',
               textAlign:'right',
-              marginRight: '3.5vw',
-              fontSize: '100px',
+              marginRight: '5.4vw',
+              // marginRight: '78px',
+              fontSize: '120px',
               letterSpacing: '0.15em',
-              marginTop: '0px'
+              // marginTop: '320px',
+              marginTop: '320px',
+              zIndex: '10000'
             }}
           >
             ВАУ ТОРТ
-          </h1>
+          </h1> */}
+
+          <CompanyName />
+
+          <ChangeFrontPage />
+          <DescriptionFrontPageDesktop />
           
           <AboutUsDesktop />
 
