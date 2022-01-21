@@ -20,6 +20,12 @@ import BGPics from './BGPics';
 
 //rcc - for fast class creation
 
+//todo
+//ForWho Cards - make them alive, maybe click or hover
+//Свойства - добавить открытие этой штуки на наведение и туда влить воды и описание
+// for who animate on hover
+//priced add from and to
+
 class Main extends Component {
   render() {
     return (
