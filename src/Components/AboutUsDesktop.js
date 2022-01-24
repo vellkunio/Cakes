@@ -2,6 +2,25 @@ import React, { Component } from 'react';
 
 class AboutUsDesktop extends Component {
     render() {
+        let name = 'О нас'
+        let text = `Наша уникальная особенность в том, что для нас не существует 
+        невозможного. Любой, даже самый сложный и завораживающий торт 
+        будет сделан нашими профессионалами`
+
+        if (localStorage.language === 'RU') {
+            name = 'О нас'
+            text = `Наша уникальная особенность в том, что для нас не существует 
+            невозможного. Любой, даже самый сложный и завораживающий торт 
+            будет сделан нашими профессионалами`
+        } else if (localStorage.language === 'UA') {
+            name = 'Про нас'
+            text = `Наша унікальна особливість у тому, що для нас немає неможливого. 
+            Будь-який, навіть найскладніший і торт буде зроблено нашими професіоналами`
+        } else if (localStorage.language === 'US') {
+            name = 'About us'
+            text = `Our unique feature is that nothing is impossible for us. 
+            Any, even the most complex cake will be made by our professionals`
+        }
       return (
         <div>
             <div style={{marginTop: '100vh'}}>
@@ -12,7 +31,7 @@ class AboutUsDesktop extends Component {
                         marginBottom: '0px'
                     }}
                 >
-                О нас
+                {name}
                 </h2>
 
                 <p
@@ -25,9 +44,7 @@ class AboutUsDesktop extends Component {
                         marginRight: 'auto'
                     }}
                 >
-                    Наша уникальная особенность в том, что для нас не существует 
-                    невозможного. Любой, даже самый сложный и завораживающий торт 
-                    будет сделан нашими профессионалами
+                    {text}
                 </p>
 
             </div>

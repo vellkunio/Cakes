@@ -7,6 +7,47 @@ import boy from '../images/boy.png'
 
 class CakesDesktop extends Component {
     render() {
+        let sectionName = 'Особенности'
+        let name1 = 'Эксклюзивность'
+        let name2 = 'Премиальное качество'
+        let name3 = 'Креативность'
+        let text1 = 'Все торты делаются вручную с индивидуальным подходом к каждому изделию'
+        let text2 = `Использование только натуральных и лучших ингредиентов делает торты 
+            не только самыми красивыми, а и самыми полезными и вкусными в Украине и Европе`
+        let text3 = `Хочется чего-то удивительного, но не уверен что именно? Дай 
+            полную свободу нашей команде и будешь удивлен в двойне!`
+
+        if (localStorage.language === 'RU') {
+            sectionName = 'Особенности'
+            name1 = 'Эксклюзивность'
+            name2 = 'Премиальное качество'
+            name3 = 'Креативность'
+            text1 = 'Все торты делаются вручную с индивидуальным подходом к каждому изделию'
+            text2 = `Использование только натуральных и лучших ингредиентов делает торты 
+                не только самыми красивыми, а и самыми полезными и вкусными в Украине и Европе`
+            text3 = `Хочется чего-то удивительного, но не уверен что именно? Дай 
+                полную свободу нашей команде и будешь удивлен в двойне!`
+        } else if (localStorage.language === 'UA') {
+            sectionName = 'Особливості'
+            name1 = 'Ексклюзивність'
+            name2 = 'Преміальна якість'
+            name3 = 'Креативність'
+            text1 = 'Всі торти робляться вручну з індивідуальним підходом до кожного виробу.'
+            text2 = `Використання тільки натуральних та кращих інгредієнтів робить торти 
+                не тільки найкрасивішими, а й найсмачнішими в Україні та Європі.`
+            text3 = `Хочеться чогось дивовижного, але не впевнений, що саме? Дай повну 
+                свободу нашій команді і будеш здивований у двійні!`
+        } else if (localStorage.language === 'US') {
+            sectionName = 'Features'
+            name1 = 'Exclusive'
+            name2 = 'Premium quality'
+            name3 = 'Creativity'
+            text1 = 'All cakes are made by hand with an individual approach to each product'
+            text2 = `Using only natural and best ingredients makes cakes not only the most beautiful, 
+                but also the most healthy and delicious in Ukraine and Europe`
+            text3 = `Looking for something amazing but not sure what exactly? Give complete freedom to our 
+                team and you will be doubly surprised!`
+        }
       return (
         <div>
             <div style={{marginTop: '64px'}}>
@@ -18,7 +59,7 @@ class CakesDesktop extends Component {
                         marginBottom: '0px'
                     }}
                 >
-                Особенности
+                {sectionName}
                 </h2>
                 
                 {/* Features */}
@@ -46,7 +87,7 @@ class CakesDesktop extends Component {
                             textAlign: 'center',
                             marginBottom: '0px'
                         }}>
-                            Эксклюзивность
+                            {name1}
                         </h5>
 
                         <p
@@ -57,10 +98,7 @@ class CakesDesktop extends Component {
                             fontSize: '16px'
                         }}
                         >
-                            Все торты делаются 
-                            вручную с индивидуальным 
-                            подходом к каждому 
-                            изделию
+                            {text1}
                         </p>
 
                     </div>
@@ -79,7 +117,7 @@ class CakesDesktop extends Component {
                             textAlign: 'center',
                             marginBottom: '0px'
                         }}>
-                            Премиальное качество
+                            {name2}
                         </h5>
 
                         <p
@@ -90,13 +128,7 @@ class CakesDesktop extends Component {
                             fontSize: '16px'
                         }}
                         >
-                            Использование только 
-                            натуральных и лучших 
-                            ингредиентов делает торты 
-                            не только самыми 
-                            красивыми, а и самыми 
-                            полезными и вкусными в 
-                            Украине и Европе
+                            {text2}
                         </p>
 
                     </div>
@@ -115,7 +147,7 @@ class CakesDesktop extends Component {
                             textAlign: 'center',
                             marginBottom: '0px'
                         }}>
-                            Креативность
+                            {name3}
                         </h5>
 
                         <p
@@ -126,12 +158,7 @@ class CakesDesktop extends Component {
                             fontSize: '16px'
                         }}
                         >
-                            Хочется чего-то 
-                            удивительного, но не 
-                            уверен что именно? Дай 
-                            полную свободу нашей 
-                            команде и будешь удивлен 
-                            в двойне!
+                            {text3}
                         </p>
 
                     </div>

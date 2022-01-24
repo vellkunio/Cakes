@@ -12,6 +12,7 @@ export default function ChangeFrontPage() {
     //     config: { duration: 1000 },
     //   })
 
+
     const styles1 = useSpring({
         loop: { reverse: true },
         from: { x: 0, y: 0, opacity: '100%', transform: 'scale(1)' },
