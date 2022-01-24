@@ -7,7 +7,7 @@ import email from '../images/email.png'
 import instagram from '../images/instagram.png'
 import telegram from '../images/telegram.png'
 import whatsapp from '../images/whatsapp.png'
-import viber from '../images/viber.png'
+import tiktok from '../images/tiktok.png'
 
 export default class MoreDesktop extends Component {
   render() {
@@ -157,13 +157,15 @@ export default class MoreDesktop extends Component {
                                 Позвонить нам
                             </p>
 
+                            <a href="tel:+12262241256">
                             <img
-                            src={phone} alt="inst"
+                            src={phone} alt="Call icon"
                                 style={{
                                     width: '167px',
                                     marginTop: '8px'
                                 }}
                             />
+                            </a>
                         </div>
                     </Grid>
                     <Grid item xs={4} md={4} style={{marginTop: '40px'}}>
@@ -178,13 +180,15 @@ export default class MoreDesktop extends Component {
                                 Написать нам
                             </p>
 
+                            <a href="sms:+380671272761&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">
                             <img
-                            src={messages} alt="inst"
+                            src={messages} alt="Message icon"
                                 style={{
                                     width: '167px',
                                     marginTop: '8px'
                                 }}
                             />
+                            </a>
                         </div>
                     </Grid>
                     <Grid item xs={4} md={4} style={{marginTop: '40px'}}>
@@ -199,6 +203,7 @@ export default class MoreDesktop extends Component {
                                 На почту
                             </p>
 
+                            <a href="mailto:ksenia79@ukr.net">
                             <img
                             src={email} alt="inst"
                                 style={{
@@ -206,6 +211,7 @@ export default class MoreDesktop extends Component {
                                     marginTop: '8px'
                                 }}
                             />
+                            </a>
                         </div>
                     </Grid>
                 </Grid>
@@ -224,40 +230,48 @@ export default class MoreDesktop extends Component {
 
                 <Grid container spacing={2}>
                     <Grid item xs={3} md={3} style={{marginTop: '40px', marginLeft: '-53px'}}>
+                    <a href="https://www.instagram.com/oksanavilkun/" target="_blank">
                     <img
-                    src={instagram} alt="inst"
+                    src={instagram} alt="instagram"
                         style={{
                             width: '141px',
                             marginTop: '0px'
                         }}
                     />
+                    </a>
                     </Grid>
                     <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <a href="https://t.me/vellkunio" target="_blank">
                     <img
-                    src={telegram} alt="inst"
+                    src={telegram} alt="telegram"
                         style={{
                             width: '141px',
                             marginTop: '0px'
                         }}
                     />
+                    </a>
                     </Grid>
                     <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <a href="https://www.tiktok.com/@pp_s_ksushey" target="_blank">
                     <img
-                    src={viber} alt="inst"
+                    src={tiktok} alt="tiktok"
                         style={{
                             width: '141px',
                             marginTop: '0px'
                         }}
                     />
+                    </a>
                     </Grid>
                     <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <a href="https://wa.me/380671272761?text=Здравствуйте!" target="_blank">
                     <img
-                    src={whatsapp} alt="inst"
+                    src={whatsapp} alt="whatsapp"
                         style={{
                             width: '141px',
                             marginTop: '0px'
                         }}
                     />
+                    </a>
                     </Grid>
                 </Grid>
 

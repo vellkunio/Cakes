@@ -68,37 +68,13 @@ export default class BGPics extends Component {
                 style={{
                     position: 'absolute',
                     width: '400px',
-                    marginTop: '4028px',
+                    marginTop: '4080px',
                     right: '0',
                     zIndex: '-5'
                 }}
             />
 
             {/* Background Elipses */}
-
-            {/* <div style={{
-                width: '1000px',
-                height: '1000px',
-                background: 'rgba(133, 159, 148, 0.5)',
-                borderRadius: '100%', position: 'absolute', zIndex: '-5',
-                top: '-250px',
-                left: '-150px',
-                right: 'auto',
-                filter: 'blur(50px)', WebkitFilter: 'blur(50px)',
-            }}></div>
-
-            <div style={{
-                width: '1000px',
-                height: '1000px',
-                background: 'rgba(211, 146, 126, 0.5)',
-                borderRadius: '100%', position: 'absolute', zIndex: '-4',
-                top: '-250px',
-                left: '700px',
-                right: 'auto',
-                filter: 'blur(50px)', WebkitFilter: 'blur(50px)',
-                overflowX: 'hidden'
-            }}></div> */}
-
             <div style={{
                 height:'130vh',
                 width: '100vw',

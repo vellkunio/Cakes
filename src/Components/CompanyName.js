@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 
 export default class CompanyName extends Component {
   render() {
+
+    // const {
+    //   lng
+    // } = this.props
+    let companyName = 'ВАУ ТОРТ'
+
+    if (localStorage.language === 'RU') {
+      companyName = 'ВАУ ТОРТ';
+    } else if (localStorage.language === 'UA') {
+      companyName = 'ВАУ ТОРТ';
+    } else if (localStorage.language === 'US') {
+      companyName = 'WOW CAKE'
+    }
+
     return (
     <div>
         <h1 className='oswald'
@@ -19,7 +33,7 @@ export default class CompanyName extends Component {
               opacity: '100%'
             }}
           >
-            ВАУ ТОРТ
+            {companyName}
           </h1>
     </div>
     );

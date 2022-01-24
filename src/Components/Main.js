@@ -1,9 +1,10 @@
 import { Button } from '@material-ui/core';
 import React, { Component } from 'react';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+
+
 import ChangeFrontPage from './changeFrontPage.js';
-import ChangeFrontImage1 from './changeFrontImage1.js';
-import ChangeFrontImage2 from './changeFrontImage2.js';
-import bgItem2 from '../images/bgItem2.png';
 
 import DescriptionFrontPageDesktop from './descriptionFrontPageDesktop.js';
 import AboutUsDesktop from './AboutUsDesktop';
@@ -19,6 +20,7 @@ import FooterDesktop from './FooterDesktop';
 import BGPics from './BGPics';
 import CompanyName from './CompanyName';
 
+import ReactCountryFlag from "react-country-flag"
 //rcc - for fast class creation
 
 //todo
@@ -26,41 +28,57 @@ import CompanyName from './CompanyName';
 //Свойства - добавить открытие этой штуки на наведение и туда влить воды и описание     Under Review
 // for who animate on hover                                                             Under Review
 //priced add from and to                                                                Done
-//спейсинги между названиями глав                                                       
+//спейсинги между названиями глав                                                       Done
 //add scroll effect when press More                                                     
-//add actions for contact us buttons                                                    
+//add actions for contact us buttons                                                    Done
 //lower down Name of th company                                                         Done
 
 class Main extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+        language: 'US'
+    }
+}
+
+handleChange = (event) => {
+  this.setState({
+      language: event.target.value
+  });
+}
   render() {
+    if (localStorage.getItem("language") === null){
+      this.setState({
+        language: 'RU'
+      });
+    }
+    localStorage.setItem('language', this.state.language);
     return (
       <div>
         <div className='mainDiv'>
-          {/* <ChangeFrontImage2 styles={{zIndex: '10'}} /> */}
-          {/* <ChangeFrontImage1 styles={{zIndex: '1'}}/> */}
           
-          
-
-          {/* <h1 className='oswald'
-            style={{
-              display: 'block',
-              textAlign:'right',
-              marginRight: '5.4vw',
-              // marginRight: '78px',
-              fontSize: '120px',
-              letterSpacing: '0.15em',
-              // marginTop: '320px',
-              marginTop: '320px',
-              zIndex: '10000'
-            }}
+          <Select
+          style={{position: 'absolute',left: '20px',top: '20px',background: 'transparent'}}
+          variant='standard' id="language" value={this.state.language} onChange={this.handleChange}
           >
-            ВАУ ТОРТ
-          </h1> */}
+            <MenuItem className="MenuItem" style={{display: 'block', textAlign: 'center', marginBottom: '5px'}} sx={{color: 'red'}} value={'RU'}>
+              <ReactCountryFlag countryCode="RU" style={{width: '20px', height: '20px'}} svg />
+            </MenuItem>
 
-          <CompanyName />
+            <MenuItem style={{display: 'block', textAlign: 'center', marginBottom: '5px'}} value={'US'}>
+              <ReactCountryFlag countryCode="US" style={{width: '20px', height: '20px'}} svg />
+            </MenuItem>
+
+            <MenuItem style={{display: 'block', textAlign: 'center'}} value={'UA'}>
+              <ReactCountryFlag countryCode="UA" style={{width: '20px', height: '20px'}} svg />
+            </MenuItem>
+            
+          </Select>
+
+          <CompanyName/>
 
           <ChangeFrontPage />
-          <DescriptionFrontPageDesktop />
+          <DescriptionFrontPageDesktop/>
           
           <AboutUsDesktop />
 

@@ -2,15 +2,45 @@ import React, { useState, useEffect } from 'react'
 import { useTransition, animated, config } from '@react-spring/web'
 import { Button } from '@material-ui/core'
 
+import smoothscroll from 'smoothscroll-polyfill';
+
+
 
 export default function DescriptionFrontPageDesktop() {
+  let state1 = 'Радуй'
+  let state2 = 'Удивляй'
+  let text1 = 'Обрадуй своих друзей, близких или знакомых необычным подарком'
+  let text2 = 'Удивлены будут даже те, кто думает что их уже не удивить'
+  let btnText = 'ПОДРОБНЕЕ'
+
+  if (localStorage.language === 'RU') {
+    state1 = 'Радуй'
+    state2 = 'Удивляй'
+    text1 = 'Обрадуй своих друзей, близких или знакомых необычным подарком'
+    text2 = 'Удивлены будут даже те, кто думает что их уже не удивить'
+    btnText = 'ПОДРОБНЕЕ'
+  } else if (localStorage.language === 'UA') {
+    state1 = 'Радуй'
+    state2 = 'Дивуй'
+    text1 = 'Порадуй своїх друзів, близьких або знайомих незвичайним подарунком'
+    text2 = 'Здивовуй навіть тих, хто думає, що їх вже не здивувати'
+    btnText = 'ДЕТАЛЬНІШЕ'
+  } else if (localStorage.language === 'US') {
+    state1 = 'Happy'
+    state2 = 'Surprise'
+    text1 = 'Delight your friends, relatives or acquaintances with an unusual gift'
+    text2 = `Surprise even those who think they've seen everything`
+    btnText = 'More'
+  }
+    smoothscroll.polyfill();
+    const testY = window.innerHeight;
     const [toggle, set] = useState(false)
     const transitions = useTransition(toggle, {
       from: { position: 'absolute', opacity: 0 },
       enter: { opacity: 1 },
       leave: { opacity: 0 },
       reverse: toggle,
-      // delay: 2000,
+      delay: 1000,
       config: config.molasses,
       onRest: () => set(!toggle),
     })
@@ -31,7 +61,7 @@ export default function DescriptionFrontPageDesktop() {
               marginRight: '3.5vw',
               fontSize: '48px',
               marginBottom: '0'
-          }}>Радуй</h1>
+          }}>{state1}</h1>
 
           <p
           style={{
@@ -41,7 +71,7 @@ export default function DescriptionFrontPageDesktop() {
               marginTop:'16px',
               marginRight: '3.5vw',
               textAlign: 'right'
-          }}>Обрадуй своих друзей, близких или знакомых необычным подарком</p>
+          }}>{text1}</p>
           <Button
           className='rubik'
           size="large"
@@ -58,7 +88,11 @@ export default function DescriptionFrontPageDesktop() {
                 WebkitBackdropFilter: 'blur(15px)'
 
             }}
-          >Подробнее</Button>
+            onClick={()=> window.scrollTo({
+              top: testY,
+              behavior: "smooth"
+          }) }
+          >{btnText}</Button>
         </animated.div>
       ) 
       : (
@@ -77,7 +111,7 @@ export default function DescriptionFrontPageDesktop() {
             marginRight: '3.5vw',
             fontSize: '48px',
             marginBottom: '0'
-        }}>Удивляй</h1>
+        }}>{state2}</h1>
 
         <p
         style={{
@@ -87,7 +121,7 @@ export default function DescriptionFrontPageDesktop() {
             marginTop:'16px',
             marginRight: '3.5vw',
             textAlign: 'right'
-        }}>Удивлены будут даже те, кто думает что их уже не удивить</p>
+        }}>{text2}</p>
         <Button
         className='rubik'
         size="large"
@@ -104,7 +138,11 @@ export default function DescriptionFrontPageDesktop() {
               WebkitBackdropFilter: 'blur(15px)'
 
           }}
-        >Подробнее</Button>
+        onClick={()=> window.scroll({
+            top: 730,
+            behavior: "smooth"
+        }) }
+        >{btnText}</Button>
       </animated.div>
       )
     )

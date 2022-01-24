@@ -8,7 +8,47 @@ import CardCakeDesktop from './CardCakeDesktop';
 
 class CakesDesktop extends Component {
     render() {
+        let nameSection = 'Торты';
+        let name1 = 'Свадебный';
+        let name2 = 'Детский';
+        let name3 = 'Женский';
+        let name4 = 'Мужской';
+        let text1 = 'Идеальный торт для самого важного события в жизни двух сердец';
+        let text2 = 'Что может быть лучше чем счастливая улыбка ребенка?';
+        let text3 = 'Любая девушка будет в восторге от подарка сделанного специально для неё';
+        let text4 = 'По-настоящему солидный и роскошый торт для мужчин';
 
+        if (localStorage.language === 'RU') {
+            nameSection = 'Торты';
+            name1 = 'Свадебный';
+            name2 = 'Детский';
+            name3 = 'Женский';
+            name4 = 'Мужской';
+            text1 = 'Идеальный торт для самого важного события в жизни двух сердец';
+            text2 = 'Что может быть лучше чем счастливая улыбка ребенка?';
+            text3 = 'Любая девушка будет в восторге от подарка сделанного специально для неё';
+            text4 = 'По-настоящему солидный и роскошый торт для мужчин';
+        } else if (localStorage.language === 'UA') {
+            nameSection = 'Торти';
+            name1 = 'Весільний';
+            name2 = 'Дитячий';
+            name3 = 'Жіночий';
+            name4 = 'Чоловічий';
+            text1 = 'Ідеальний торт для найважливішої події у житті двох сердець';
+            text2 = 'Що може бути краще, ніж щаслива посмішка улюбленної дитини?';
+            text3 = 'Будь-яка дівчина буде в захваті від подарунка спеціально для неї';
+            text4 = 'По-справжньому солідний та розкішний торт для чоловіків';
+        } else if (localStorage.language === 'US') {
+            nameSection = 'Cakes';
+            name1 = 'Wedding';
+            name2 = 'Kids';
+            name3 = 'female';
+            name4 = 'Male';
+            text1 = 'The perfect cake for the most important event in the lives of two hearts';
+            text2 = `What could be better than seeing a happy smile of your lovely child? `;
+            text3 = 'Any girl will be delighted with a gift made especially for her';
+            text4 = 'Truly serious and luxurious cake for real man in unique design';
+        }
       return (
         <div>
             <div style={{marginTop: '40px'}}>
@@ -20,7 +60,7 @@ class CakesDesktop extends Component {
                         marginBottom: '0px'
                     }}
                 >
-                Торты
+                {nameSection}
                 </h2>
                 
                 {/* Cakes */}
@@ -30,17 +70,13 @@ class CakesDesktop extends Component {
                     marginTop: '40px'
                 }}>
 
-                    <CardCakeDesktop name={'Свадебный'} image={hearts} text={`Идеальный торт для 
-                            самого важного события в жизни двух сердец`}/>
+                    <CardCakeDesktop name={name1} image={hearts} text={text1}/>
 
-                    <CardCakeDesktop name={'Детский'} image={ghost} text={`Что может быть 
-                            лучше чем счастливая улыбка ребенка?`}/>
+                    <CardCakeDesktop name={name2} image={ghost} text={text2}/>
 
-                    <CardCakeDesktop name={'Женский'} image={girl} text={`Любая девушка 
-                            будет в восторге от подарка сделанного специально для неё`}/>
+                    <CardCakeDesktop name={name3} image={girl} text={text3}/>
 
-                    <CardCakeDesktop name={'Мужской'} image={boy} text={`По-настоящему 
-                            солидный и раскошый торт для мужчин`}/>
+                    <CardCakeDesktop name={name4} image={boy} text={text4}/>
 
 
                 </div>

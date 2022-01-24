@@ -4,6 +4,19 @@ import phones from '../images/phones.png'
 
 class ExamplesDesktop extends Component {
     render() {
+        let name = 'Примеры'
+        let text = 'Смотри что уже получили сотни людей в нашем инстаграм по клику на телефоны слева'
+
+        if (localStorage.language === 'RU') {
+            name = 'Примеры'
+            text = 'Смотри что уже получили сотни людей в нашем инстаграм по клику на телефоны слева'
+        } else if (localStorage.language === 'UA') {
+            name = 'Приклади'
+            text = 'Дивись, що вже отримали сотні людей у нашому інстаграмі на кліку на телефони зліва'
+        } else if (localStorage.language === 'US') {
+            name = 'Examples'
+            text = 'See what hundreds of people have already received on our Instagram by clicking on the phones on the left'
+        }
       return (
         <div style={{marginTop: '40px'}}>
 
@@ -29,7 +42,7 @@ class ExamplesDesktop extends Component {
                                 fontSize: '48px',
                                 marginBottom: '0px'
                             }}
-                        >Примеры</h2>
+                        >{name}</h2>
 
                         <p
                             style={{
@@ -41,10 +54,7 @@ class ExamplesDesktop extends Component {
                                 marginRight: 'auto'
                             }}
                         >
-                            Смотри что уже получили 
-                            сотни людей в нашем 
-                            инстаграм по клику на 
-                            телефоны слева
+                            {text}
                         </p>
                     </div>
                 </Grid>
