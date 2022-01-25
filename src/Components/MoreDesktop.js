@@ -11,6 +11,63 @@ import tiktok from '../images/tiktok.png'
 
 export default class MoreDesktop extends Component {
   render() {
+    let name1 = 'Цены'
+    let name2 = 'Как получить?'
+    let name3 = 'Как заказать?'
+    let priceText = `У нас нету единой цены потому, что каждое наше изделие - уникальное и 
+    делается на заказ, но Вы можете ознакомиться с ценами на уже сделанные ранее тортики в нашем 
+    инстаграм, которые начинаются от 100`
+    let get1 = 'Самовывоз из Одессы'
+    let get2 = 'Доставка по Одесской области'
+    let get3 = 'Доставка по Украине (дополнительно)'
+    let subName1 = 'Позвонить нам'
+    let subName2 = 'Написать нам'
+    let subName3 = 'На почту'
+    let subName4 = 'В социальных сетях'
+
+    if (localStorage.language === 'RU') {
+        name1 = 'Цены'
+        name2 = 'Как получить?'
+        name3 = 'Как заказать?'
+        priceText = `У нас нету единой цены потому, что каждое наше изделие - уникальное и 
+        делается на заказ, но Вы можете ознакомиться с ценами на уже сделанные ранее тортики в нашем 
+        инстаграм, которые начинаются от 100`
+        get1 = 'Самовывоз из Одессы'
+        get2 = 'Доставка по Одесской области'
+        get3 = 'Доставка по Украине (дополнительно)'
+        subName1 = 'Позвонить нам'
+        subName2 = 'Написать нам'
+        subName3 = 'На почту'
+        subName4 = 'В социальных сетях'
+    } else if (localStorage.language === 'UA') {
+        name1 = 'Ціни'
+        name2 = 'Як отримати?'
+        name3 = 'Як замовити?'
+        priceText = `У нас немає єдиної ціни тому, що кожен наш виріб - унікальний і робиться на замовлення, 
+        але Ви можете ознайомитися з цінами на зроблені раніше тортики в нашому інстаграмі, 
+        які починаються від 100$`
+        get1 = 'Самовивіз з Одеси'
+        get2 = 'Доставка по Одеській області'
+        get3 = 'Доставка по Україні (додатково)'
+        subName1 = 'Зателефонувати нам'
+        subName2 = 'Написати нам'
+        subName3 = 'На пошту'
+        subName4 = 'В соціальних мережах'
+    } else if (localStorage.language === 'US') {
+        name1 = 'Prices'
+        name2 = 'How to get?'
+        name3 = 'How to order?'
+        priceText = `We do not have a single price because each of our products is unique and made individually, 
+        but you can see the prices for cakes already made earlier on our instagram, which start from 100`
+        get1 = 'Pick up in Odessa'
+        get2 = 'Delivery within Odessa oblast'
+        get3 = 'Delivery within Ukraine (extra)'
+        subName1 = 'Call us'
+        subName2 = 'Message us'
+        subName3 = 'Email'
+        subName4 = 'In social media'
+    }
+
     return (
         <div 
         style={{
@@ -33,11 +90,11 @@ export default class MoreDesktop extends Component {
                             // marginBottom: '50px'
                         }}
                     >
-                    Цены
+                    {name1}
                     </h2>
                     <p
                     style={{
-                        width: '290px',
+                        width: '350px',
                         lineHeight: '150%',
                         textAlign: 'center',
                         fontSize: '16px',
@@ -46,15 +103,7 @@ export default class MoreDesktop extends Component {
                         marginTop: '40px'
                     }}
                     >
-                        У нас нету единой цены 
-                        потому, что каждое наше 
-                        изделие - уникальное и 
-                        делается на заказ, но Вы 
-                        можете ознакомиться с 
-                        ценами на уже сделанные 
-                        ранее тортики в нашем 
-                        инстаграм, которые 
-                        начинаются от 100$
+                        {priceText}
                     </p>
 
                     <h2 className='oswald'
@@ -63,7 +112,7 @@ export default class MoreDesktop extends Component {
                             marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px'
                         }}
                     >
-                    Как получить?
+                    {name2}
                     </h2>
 
                     <div
@@ -82,7 +131,7 @@ export default class MoreDesktop extends Component {
                         marginLeft: 'auto', marginRight: 'auto',
                     }}
                     >
-                        Самовывоз из Одессы
+                        {get1}
                     </p>
                     </div>
 
@@ -101,7 +150,7 @@ export default class MoreDesktop extends Component {
                         marginLeft: 'auto', marginRight: 'auto',
                     }}
                     >
-                        Доставка по Одесской области
+                        {get2}
                     </p>
                     </div>
 
@@ -120,7 +169,7 @@ export default class MoreDesktop extends Component {
                         marginLeft: 'auto', marginRight: 'auto',
                     }}
                     >
-                        Доставка по Украине (экстра)
+                        {get3}
                     </p>
                     </div>
 
@@ -141,7 +190,7 @@ export default class MoreDesktop extends Component {
                             marginBottom: '0px'
                         }}
                     >
-                    Как заказать?
+                    {name3}
                     </h2>
                     
                 <Grid container spacing={2}>
@@ -154,7 +203,7 @@ export default class MoreDesktop extends Component {
                                 marginLeft: 'auto', marginRight: 'auto', marginTop: '0px', marginBottom: '0px'
                             }}
                             >
-                                Позвонить нам
+                                {subName1}
                             </p>
 
                             <a href="tel:+12262241256">
@@ -177,7 +226,7 @@ export default class MoreDesktop extends Component {
                                 marginLeft: 'auto', marginRight: 'auto', marginTop: '0px', marginBottom: '0px'
                             }}
                             >
-                                Написать нам
+                                {subName2}
                             </p>
 
                             <a href="sms:+380671272761&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">
@@ -200,12 +249,12 @@ export default class MoreDesktop extends Component {
                                 marginLeft: 'auto', marginRight: 'auto', marginTop: '0px', marginBottom: '0px'
                             }}
                             >
-                                На почту
+                                {subName3}
                             </p>
 
                             <a href="mailto:ksenia79@ukr.net">
                             <img
-                            src={email} alt="inst"
+                            src={email} alt="email"
                                 style={{
                                     width: '167px',
                                     marginTop: '8px'
@@ -218,11 +267,11 @@ export default class MoreDesktop extends Component {
 
                 <p
                             style={{
-                                width: '155px', textAlign: 'center', fontSize: '16px',
-                                marginLeft: 'auto', marginRight: 'auto', marginTop: '75px', marginBottom: '0px'
+                                width: '300px', textAlign: 'center', fontSize: '16px',
+                                marginLeft: 'auto', marginRight: 'auto', marginTop: '40px', marginBottom: '0px'
                             }}
                             >
-                                В соц. сетях
+                                {subName4}
                             </p>
                     
 

@@ -37,7 +37,7 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state ={
-        language: 'US'
+        language: localStorage.language
     }
 }
 
@@ -52,6 +52,12 @@ handleChange = (event) => {
         language: 'RU'
       });
     }
+    // if (localStorage.getItem("language") != null){
+    //   this.setState({
+    //     language: this.state.language
+    //   });
+    // } 
+ 
     localStorage.setItem('language', this.state.language);
     return (
       <div>
