@@ -3,6 +3,84 @@ import ChartElement from './ChartElement'
 
 export default class ForWhoDesktop extends Component {
     render() {
+        let sectionName = 'Для кого?'
+        let name1 = 'Мужу'
+        let name2 = 'Жене'
+        let name3 = 'Родителям'
+        let name4 = 'Детям'
+        let name5 = 'Родственникам'
+        let name6 = 'Другу'
+        let name7 = 'Знакомому'
+        let name8 = 'Учителю'
+        let name9 = 'Особый повод'
+        let name10 = 'Подруге'
+        let name11 = 'Коллеге'
+        let name12 = 'Знакомой'
+        let name13 = 'Корпоратив'
+        let name14 = 'Юбилея'
+        let name15 = 'Определения пола ребенка'
+        let name16 = 'Мальчика'
+        let name17 = 'Девочки'
+
+        if (localStorage.language === 'RU') {
+            sectionName = 'Для кого?'
+            name1 = 'Мужу'
+            name2 = 'Жене'
+            name3 = 'Родителям'
+            name4 = 'Детям'
+            name5 = 'Родственникам'
+            name6 = 'Другу'
+            name7 = 'Знакомому'
+            name8 = 'Учителю'
+            name9 = 'Особый повод'
+            name10 = 'Подруге'
+            name11 = 'Коллеге'
+            name12 = 'Знакомой'
+            name13 = 'Корпоратив'
+            name14 = 'Юбилея'
+            name15 = 'Определения пола ребенка'
+            name16 = 'Мальчика'
+            name17 = 'Девочки'
+        } else if (localStorage.language === 'UA') {
+            sectionName = 'Для кого?'
+            name1 = 'Чоловіку'
+            name2 = 'Дружині'
+            name3 = 'Батькам'
+            name4 = 'Дітям'
+            name5 = 'Родичам'
+            name6 = 'Другу'
+            name7 = 'Знайомому'
+            name8 = 'Вчителю'
+            name9 = 'Особливий привід'
+            name10 = 'Подрузі'
+            name11 = 'Колезі'
+            name12 = 'Знайомий'
+            name13 = 'Корпоратив'
+            name14 = 'Ювілею'
+            name15 = 'Визначення статі дитини'
+            name16 = 'Хлопчику'
+            name17 = 'Дівчині'
+        } else if (localStorage.language === 'US') {
+            sectionName = 'For who?'
+            name1 = 'Husband'
+            name2 = 'Wife'
+            name3 = 'Parent'
+            name4 = 'Kid'
+            name5 = 'Relatives'
+            name6 = 'Friend'
+            name7 = 'Familiar'
+            name8 = 'Boyfriend'
+            name9 = 'Special occasion'
+            name10 = 'Girlfriend'
+            name11 = 'Colleague'
+            name12 = 'Familiar'
+            name13 = 'Corporate'
+            name14 = 'Anniversary'
+            name15 = 'Gender reveal'
+            name16 = 'Boy'
+            name17 = 'Girl'
+        }
+
         const lineColor = 'rgba(247, 207, 186, 0.75)';
         // const green= 'rgba(133, 159, 148, 0.5)';
         const green= 'rgba(229, 253, 232, 0.5)';
@@ -19,12 +97,12 @@ export default class ForWhoDesktop extends Component {
                         marginBottom: '50px'
                     }}
                 >
-                Для кого?
+                {sectionName}
                 </h2>
 
                 <div>
                     <ChartElement 
-                    name={"Мужу"}
+                    name={name1}
                     BGcolor={pink}
                     color={'black'}
                     marginTop={'-40px'}
@@ -35,7 +113,7 @@ export default class ForWhoDesktop extends Component {
                     />
 
                     <ChartElement 
-                    name={"Жене"}
+                    name={name2}
                     BGcolor={blue}
                     color={'black'}
                     marginTop={'120px'}
@@ -46,7 +124,7 @@ export default class ForWhoDesktop extends Component {
                     />
 
                     <ChartElement 
-                    name={"Родителям"}
+                    name={name3}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'-40px'}
@@ -56,7 +134,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'8'}
                     />
                     <ChartElement 
-                    name={"Детям"}
+                    name={name4}
                     BGcolor={pink}
                     color={'black'}
                     marginTop={'20px'}
@@ -66,7 +144,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-4'}
                     />
                     <ChartElement 
-                    name={"Родственникам"}
+                    name={name5}
                     BGcolor={blue}
                     color={'black'}
                     marginTop={'190px'}
@@ -77,7 +155,7 @@ export default class ForWhoDesktop extends Component {
                     />
 
                     <ChartElement 
-                    name={"Другу"}
+                    name={name6}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'0px'}
@@ -88,7 +166,7 @@ export default class ForWhoDesktop extends Component {
                     />
                     
                     <ChartElement 
-                    name={"Знакомому"}
+                    name={name7}
                     BGcolor={blue}
                     color={'black'}
                     marginTop={'0px'}
@@ -98,7 +176,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-12'}
                     />
                     <ChartElement 
-                    name={"Учителю"}
+                    name={name8}
                     BGcolor={blue}
                     color={'grey'}
                     marginTop={'40px'}
@@ -108,7 +186,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'4'}
                     />
                     <ChartElement 
-                    name={"Особый повод"}
+                    name={name9}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'250px'}
@@ -118,7 +196,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-4'}
                     />
                     <ChartElement 
-                    name={"Подруге"}
+                    name={name10}
                     BGcolor={pink}
                     color={'black'}
                     marginTop={'120px'}
@@ -128,7 +206,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'2'}
                     />
                     <ChartElement 
-                    name={"Коллеге"}
+                    name={name11}
                     BGcolor={blue}
                     color={'grey'}
                     marginTop={'250px'}
@@ -138,7 +216,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'4'}
                     />
                     <ChartElement 
-                    name={"Знакомой"}
+                    name={name12}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'140px'}
@@ -148,7 +226,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'0'}
                     />
                     <ChartElement 
-                    name={"Корпоратив"}
+                    name={name13}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'150px'}
@@ -158,7 +236,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-8'}
                     />
                     <ChartElement 
-                    name={"Юбилея"}
+                    name={name14}
                     BGcolor={pink}
                     color={'black'}
                     marginTop={'200px'}
@@ -168,7 +246,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'0'}
                     />
                     <ChartElement 
-                    name={"Определения пола ребенка"}
+                    name={name15}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'280px'}
@@ -178,7 +256,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-4'}
                     />
                     <ChartElement 
-                    name={"Мальчика"}
+                    name={name16}
                     BGcolor={pink}
                     color={'black'}
                     marginTop={'280px'}
@@ -188,7 +266,7 @@ export default class ForWhoDesktop extends Component {
                     transform={'-4'}
                     />
                     <ChartElement 
-                    name={"Девочки"}
+                    name={name17}
                     BGcolor={green}
                     color={'black'}
                     marginTop={'100px'}
@@ -207,29 +285,3 @@ export default class ForWhoDesktop extends Component {
         )
     }
 }
-
-                    {/* <div style={{
-                        height: '1px', width: '1500px',
-                        position: 'absolute', backgroundColor: 'black', 
-                        marginLeft: '0px', marginTop: '20px', marginRight: 'auto',
-                        // transform: 'rotate(30deg)',
-                    }}></div> */}
-
-                    {/* <div style={{
-                        height: '100px', width: '1px',
-                        position: 'absolute', backgroundColor: lineColor, 
-                        left: '1050px', marginTop: '20px',
-                        transform: 'rotate(30deg)',
-                    }}></div>
-                    <div style={{
-                        height: '100px', width: '1px',
-                        position: 'absolute', backgroundColor: lineColor, 
-                        left: '1350px', marginTop: '20px',
-                        transform: 'rotate(30deg)',
-                    }}></div>
-                    <div style={{
-                        height: '200px', width: '1px',
-                        position: 'absolute', backgroundColor: lineColor, 
-                        left: '1068px', marginTop: '89px',
-                        transform: 'rotate(120deg)',
-                    }}></div> */}

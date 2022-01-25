@@ -2,6 +2,28 @@ import React, { Component } from 'react'
 
 export default class CakeTypeElement extends Component {
     render() {
+        let fillingWord = 'Начинка'
+        let featureWord = 'Особенность'
+        let extraWord = 'Дополнительно'
+        let priceWord = 'Цена'
+
+        if (localStorage.language === 'RU') {
+            fillingWord = 'Начинка'
+            featureWord = 'Особенность'
+            extraWord = 'Дополнительно'
+            priceWord = 'Цена'
+          } else if (localStorage.language === 'UA') {
+            fillingWord = 'Начинка'
+            featureWord = 'Особливість'
+            extraWord = 'Додатково'
+            priceWord = 'Ціна'
+          } else if (localStorage.language === 'US') {
+            fillingWord = 'Filling'
+            featureWord = 'Feature'
+            extraWord = 'Extra'
+            priceWord = 'Price'
+          }
+
         const {
             name, inside, feature, extra, price, image, place, count
         } = this.props
@@ -131,7 +153,7 @@ export default class CakeTypeElement extends Component {
                                 marginBottom: '8px'
                             }}
                         >
-                            <b>Начинка:</b> {inside}
+                            <b>{fillingWord}:</b> {inside}
                         </p>
 
                         <p
@@ -142,7 +164,7 @@ export default class CakeTypeElement extends Component {
                                 marginBottom: '8px',
                             }}
                         >
-                            <b>Особенность:</b> {feature}
+                            <b>{featureWord}:</b> {feature}
                         </p>
 
                         <p
@@ -153,7 +175,7 @@ export default class CakeTypeElement extends Component {
                                 marginBottom: '8px',
                             }}
                         >
-                            <b>Дополнительно:</b> {extra}
+                            <b>{extraWord}:</b> {extra}
                         </p>
 
                         <p
@@ -165,7 +187,7 @@ export default class CakeTypeElement extends Component {
                                 fontSize:'12px'
                             }}
                         >
-                            <b>Цена:</b> {price}$
+                            <b>{priceWord}:</b> {price}$
                         </p>
 
                     </div>

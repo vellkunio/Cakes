@@ -3,6 +3,19 @@ import instagram from '../images/instagram.png';
 
 export default class FooterDesktop extends Component {
   render() {
+    let text1 = 'Все права защищены и принадлежат ВАУ ТОРТ @ 2021-2022'
+    let text2 = 'Сделано'
+
+    if (localStorage.language === 'RU') {
+        text1 = 'Все права защищены и принадлежат ВАУ ТОРТ @ 2021-2022'
+        text2 = 'Сделано'
+    } else if (localStorage.language === 'UA') {
+        text1 = 'Всі права захищені та належать ВАУ ТОРТ @ 2021-2022'
+        text2 = 'Зроблено'
+    } else if (localStorage.language === 'US') {
+        text1 = 'All rights reserved and owned by WOW CAKE @ 2021-2022'
+        text2 = 'Made by'
+    }
     return (
 
         <div>
@@ -34,7 +47,7 @@ export default class FooterDesktop extends Component {
                 marginBottom: '0px', marginTop: '0px'
             }}
             >
-                Все права защищены и принадлежат ВАУ ТОРТ @ 2021-2022
+                {text1}
             </p>
 
             <p
@@ -45,7 +58,7 @@ export default class FooterDesktop extends Component {
                 marginBottom: '0px', marginTop: '0px', fontWeight: '400'
             }}
             >
-                Сделано <a href="https://vilkun.software/">Vellkunio</a>
+                {text2} <a href="https://vilkun.software/">Vellkunio</a>
             </p>
 
 

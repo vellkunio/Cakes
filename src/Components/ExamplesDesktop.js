@@ -22,6 +22,7 @@ class ExamplesDesktop extends Component {
 
             <Grid container spacing={2}>
                 <Grid item xs={6} md={6}>
+                    <a href="https://www.instagram.com/oksanavilkun/" target="_blank">
                     <img
                     src={phones} alt="inst"
                         style={{
@@ -31,6 +32,7 @@ class ExamplesDesktop extends Component {
                             marginLeft: '200px'
                         }}
                     />
+                    </a>
                 </Grid>
 
 
