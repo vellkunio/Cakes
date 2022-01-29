@@ -27,7 +27,7 @@ const trans = (x, y, s) =>
           // <div className="ccard-main" ref={ref}>
             <animated.div ref={ref}
               className="ccard"
-              style={{ transform: props.xys.to(trans)}}
+              style={{ transform: props.xys.to(trans), marginTop: '40px'}}
               onMouseLeave={() => set([0, 0, 1])}
               onMouseMove={(e) => {
                 const rect = ref.current.getBoundingClientRect();

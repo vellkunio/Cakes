@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import QualityElement from './QualityElement';
 
-class QualitiesDesktop extends Component {
+class QualitiesMobile extends Component {
     render() {
         let sectionName = 'Свойства'
         let name1 = 'Полезно'
@@ -85,47 +85,33 @@ class QualitiesDesktop extends Component {
                 {/* Qualities 1st line */}
                 <div style={{
                     // display: 'inline-block',
-                    marginBottom:'50px',
+                    // marginBottom:'50px',
                     marginTop: '40px',
                     justifyContent: 'center',
-                    display: 'flex',
+                    display: 'inline-block',
                     // backgroundColor: 'gray'
                 }}>
 
                     {/* Element1 */}
-                    <QualityElement name={name1} text={text1} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'}/>
+                    <QualityElement name={name1} text={text1} mrgLeft={'0px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-right'} position={"top-bottom"}/>
 
                     {/* Feature2 */}
-                    <QualityElement name={name2} text={text2} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'}/>
+                    <QualityElement name={name2} text={text2} mrgLeft={'30px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-left'} position={"top-bottom"}/>
 
                     {/* Feature3 */}
-                    <QualityElement name={name3} text={text3} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'}/>
-
-
-                </div>
-
-                {/* Qualities 2st line */}
-                <div style={{
-                    // display: 'inline-block',
-                    marginBottom:'50px',
-                    marginTop: '24px',
-                    justifyContent: 'center',
-                    display: 'flex',
-                    // backgroundColor: 'gray'
-                }}>
+                    <QualityElement name={name3} text={text3} mrgLeft={'0px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-right'} position={"top-bottom"}/>
 
                     {/* Element1 */}
-                    <QualityElement name={name4} text={text4} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'} position={"center-bottom"}/>
+                    <QualityElement name={name4} text={text4} mrgLeft={'30px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-left'} position={"top-bottom"}/>
 
                     {/* Feature2 */}
-                    <QualityElement name={name5} text={text5} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'} position={"center-bottom"}/>
+                    <QualityElement name={name5} text={text5} mrgLeft={'0px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-right'} position={"top-bottom"}/>
 
                     {/* Feature3 */}
-                    <QualityElement name={name6} text={text6} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'} position={"center-bottom"}/>
+                    <QualityElement name={name6} text={text6} mrgLeft={'30px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-left'} position={"top-bottom"}/>
 
                     {/* Feature4 */}
-                    <QualityElement name={name7} text={text7} mrgLeft={'30px'} mrgRight={'30px'} placement={'fade-up'} position={"center-bottom"}/>
-
+                    <QualityElement name={name7} text={text7} mrgLeft={'0px'} mrgRight={'auto'} mrgBottom={'16px'} mrgTop={'16px'} placement={'fade-right'} position={"top-bottom"}/>
 
                 </div>
 
@@ -134,4 +120,4 @@ class QualitiesDesktop extends Component {
       );
     }
 }
-export default QualitiesDesktop;
+export default QualitiesMobile;

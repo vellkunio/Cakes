@@ -64,18 +64,17 @@ class CakesDesktop extends Component {
                 </h2>
                 
                 {/* Cakes */}
-                <div style={{
+                <div 
+                style={{
                     display: 'inline-block',
                     // marginBottom:'50px',
-                    marginTop: '40px'
                 }}>
-
-                    <CardCakeDesktop name={name1} image={hearts} text={text1}/>
+                    <CardCakeDesktop name={name1} image={hearts} text={text1} />
 
                     <CardCakeDesktop name={name2} image={ghost} text={text2}/>
 
                     <CardCakeDesktop name={name3} image={girl} text={text3}/>
-
+                    
                     <CardCakeDesktop name={name4} image={boy} text={text4}/>
 
 

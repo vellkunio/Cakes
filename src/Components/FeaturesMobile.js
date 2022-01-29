@@ -59,19 +59,18 @@ class CakesDesktop extends Component {
                 </h2>
                 
                 {/* Features */}
-                <div 
-                data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-                style={{
+                <div style={{
                     // display: 'inline-block',
                     marginBottom:'50px',
                     marginTop: '8px',
                     justifyContent: 'center',
-                    display: 'flex',
-                    
+                    display: 'block',
                 }}>
 
                     {/* Feature1 */}
-                    <div style={{
+                    <div 
+                    
+                    style={{
                         display: 'inline-block',
                         marginLeft: '2vw',
                         marginRight:'2vw',
@@ -80,8 +79,9 @@ class CakesDesktop extends Component {
                     }}>
 
                         <h5
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                         style={{
-                            fontSize: '18px',
+                            fontSize: '22px',
                             lineHeight:'33px',
                             textAlign: 'center',
                             marginBottom: '0px'
@@ -90,6 +90,7 @@ class CakesDesktop extends Component {
                         </h5>
 
                         <p
+                        data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                         style={{
                             width: '290px',
                             lineHeight: '150%',
@@ -106,12 +107,14 @@ class CakesDesktop extends Component {
                     <div style={{
                         display: 'inline-block',
                         marginLeft: '2vw',
-                        marginRight:'2vw'
+                        marginRight:'2vw',
+                        marginTop: '-16px'
                     }}>
 
                         <h5
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                         style={{
-                            fontSize: '18px',
+                            fontSize: '22px',
                             lineHeight:'33px',
                             textAlign: 'center',
                             marginBottom: '0px'
@@ -120,8 +123,9 @@ class CakesDesktop extends Component {
                         </h5>
 
                         <p
+                        data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                         style={{
-                            width: '290px',
+                            width: '320px',
                             lineHeight: '150%',
                             textAlign: 'center',
                             fontSize: '16px'
@@ -136,12 +140,14 @@ class CakesDesktop extends Component {
                     <div style={{
                         display: 'inline-block',
                         marginLeft: '2vw',
-                        marginRight:'2vw'
+                        marginRight:'2vw',
+                        marginTop: '-16px'
                     }}>
 
                         <h5
+                        data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                         style={{
-                            fontSize: '18px',
+                            fontSize: '22px',
                             lineHeight:'33px',
                             textAlign: 'center',
                             marginBottom: '0px'
@@ -150,6 +156,7 @@ class CakesDesktop extends Component {
                         </h5>
 
                         <p
+                        data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                         style={{
                             width: '290px',
                             lineHeight: '150%',

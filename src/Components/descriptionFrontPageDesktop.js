@@ -50,7 +50,7 @@ export default function DescriptionFrontPageDesktop() {
           style={{
             position: 'absolute',
             opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
-            width: '350px',
+            width: 'min(350px, 75%)',
             // right: '50px',
             right: '3.5vw',
             top: '50vh'

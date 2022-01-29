@@ -7,7 +7,7 @@ export default class CompanyName extends Component {
     //   lng
     // } = this.props
     let companyName = 'ВАУ ТОРТ'
-
+    
     if (localStorage.language === 'RU') {
       companyName = 'ВАУ ТОРТ';
     } else if (localStorage.language === 'UA') {
@@ -15,22 +15,41 @@ export default class CompanyName extends Component {
     } else if (localStorage.language === 'US') {
       companyName = 'WOW CAKE'
     }
+    
+    let fontSize = '120px'
+    let mgnTop = '5.4vw'
+    let wdth = ''
+
+    if(localStorage.screenSize > 1200){
+      fontSize = '120px'
+      mgnTop = '5.4vw'
+      wdth = ''
+    } else if(localStorage.screenSize <= 1200 && localStorage.screenSize > 600){
+      fontSize = '80px'
+      mgnTop = '5.4vw'
+      wdth = ''
+    } else {
+      fontSize = '60px'
+      mgnTop = '5.4vw'
+      wdth = '50%'
+    }
 
     return (
-    <div>
+    <div style={{textAlign: 'right'}}>
         <h1 className='oswald'
             style={{
-              display: 'block',
+              display: 'inline-block',
               textAlign:'right',
               marginRight: '5.4vw',
               // marginRight: '78px',
-              fontSize: '120px',
+              fontSize: fontSize,
               letterSpacing: '0.15em',
             //   marginTop: '320px',
             //   marginTop: '38.3vh',
-              marginTop: '11vh',
+              marginTop: mgnTop,
               zIndex: '10000',
-              opacity: '100%'
+              opacity: '100%',
+              width: wdth
             }}
           >
             {companyName}
