@@ -68,23 +68,33 @@ export default class MoreDesktop extends Component {
         subName4 = 'In social media'
     }
 
+    let mrgTop = '700px'
+
+    if(localStorage.screenSize > 1200){
+        mrgTop = '430px'
+    } else {
+        mrgTop = '700px'
+    }
+
     return (
         <div 
         style={{
             marginTop: '50px'
         }}>
 
-            <div>
-            <Grid container spacing={2}>
+            <div className='MOBILE'>
+            <Grid container spacing={2} 
+            style={{marginTop: mrgTop}}
+            >
 
-                <Grid item xs={6} md={6}>
-                <div style={{marginLeft: '100px'}}>
+                <Grid item xs={12} md={6}>
+                <div>
                     <h2 className='oswald'
                         style={{
                             letterSpacing: '0.15em',
                             fontSize: '48px',
                             marginBottom: '0px',
-                            marginTop: '-50px',
+                            marginTop: '24px', // do not change or change together with 'how to order' section below
                             marginLeft: 'auto',
                             marginRight: 'auto'
                             // marginBottom: '50px'
@@ -108,20 +118,21 @@ export default class MoreDesktop extends Component {
 
                     <h2 className='oswald'
                         style={{
-                            letterSpacing: '0.15em', fontSize: '48px', marginBottom: '0px', marginTop: '40px',
+                            letterSpacing: '0.15em', fontSize: '40px', marginBottom: '0px', marginTop: '40px',
                             marginLeft: 'auto', marginRight: 'auto', marginBottom: '40px'
                         }}
                     >
                     {name2}
                     </h2>
-
+                    <Grid container spacing={2}>
+                    <Grid item xs={12} lg={12}>
                     <div
                     style={{
                         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
-                        paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', fontSize: '18px',
-                        marginLeft: '100px', marginRight: '100px',  marginBottom: '32px', 
+                        paddingBottom: '8px', marginLeft:'auto', fontSize: '18px',
+                        marginBottom: '16px', marginRight: 'auto',
                         WebkitBackdropFilter: 'blur(15px)', border: '1px solid rgba(247, 207, 186, 1)',
                     }}
                     >
@@ -134,14 +145,16 @@ export default class MoreDesktop extends Component {
                         {get1}
                     </p>
                     </div>
+                    </Grid>
 
+                    <Grid item xs={12} md={4} lg={6}>
                     <div
                     style={{
                         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
-                        paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', WebkitBackdropFilter: 'blur(15px)',
-                        marginRight: '16px', border: '1px solid rgba(247, 207, 186, 1)',
+                        paddingBottom: '8px', marginLeft:'auto', WebkitBackdropFilter: 'blur(15px)', 
+                        marginRight: 'auto', border: '1px solid rgba(247, 207, 186, 1)', marginBottom: '16px'
                     }}
                     >
                     <p
@@ -153,14 +166,16 @@ export default class MoreDesktop extends Component {
                         {get2}
                     </p>
                     </div>
+                    </Grid>
 
+                    <Grid item xs={12} md={4} lg={6}>
                     <div
                     style={{
                         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
                         // color: color,
                         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
-                        paddingBottom: '8px', marginTop:'', marginBottom:'', marginLeft:'', WebkitBackdropFilter: 'blur(15px)',
-                        marginLeft: '16px', border: '1px solid rgba(247, 207, 186, 1)',
+                        paddingBottom: '8px', marginLeft:'auto', WebkitBackdropFilter: 'blur(15px)',
+                        marginLeft: 'auto', border: '1px solid rgba(247, 207, 186, 1)',
                     }}
                     >
                     <p
@@ -172,19 +187,21 @@ export default class MoreDesktop extends Component {
                         {get3}
                     </p>
                     </div>
+                    </Grid>
+                </Grid>
 
                 </div>
                 </Grid>
 
-                <Grid item xs={6} md={6}>
-                <div style={{marginRight: '100px'}}>
+                <Grid item xs={12} md={6}>
+                <div>
 
                     <h2 className='oswald'
                         style={{
                             letterSpacing: '0.15em',
-                            fontSize: '48px',
+                            fontSize: '40px',
                             marginBottom: '0px',
-                            marginTop: '-50px',
+                            marginTop: '24px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             marginBottom: '0px'
@@ -194,7 +211,7 @@ export default class MoreDesktop extends Component {
                     </h2>
                     
                 <Grid container spacing={2}>
-                    <Grid item xs={4} md={4} style={{marginTop: '40px'}}>
+                    <Grid item xs={12} md={4} style={{marginTop: '40px'}}>
                         <div>
 
                             <p
@@ -217,7 +234,7 @@ export default class MoreDesktop extends Component {
                             </a>
                         </div>
                     </Grid>
-                    <Grid item xs={4} md={4} style={{marginTop: '40px'}}>
+                    <Grid item xs={6} md={4} style={{marginTop: '40px'}}>
                         <div>
 
                             <p
@@ -240,7 +257,7 @@ export default class MoreDesktop extends Component {
                             </a>
                         </div>
                     </Grid>
-                    <Grid item xs={4} md={4} style={{marginTop: '40px'}}>
+                    <Grid item xs={6} md={4} style={{marginTop: '40px'}}>
                         <div>
 
                             <p
@@ -278,7 +295,7 @@ export default class MoreDesktop extends Component {
                 </div>
 
                 <Grid container spacing={2}>
-                    <Grid item xs={3} md={3} style={{marginTop: '40px', marginLeft: '-53px'}}>
+                    <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
                     <a href="https://www.instagram.com/oksanavilkun/" target="_blank">
                     <img
                     src={instagram} alt="instagram"
@@ -289,7 +306,7 @@ export default class MoreDesktop extends Component {
                     />
                     </a>
                     </Grid>
-                    <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
                     <a href="https://t.me/vellkunio" target="_blank">
                     <img
                     src={telegram} alt="telegram"
@@ -300,7 +317,7 @@ export default class MoreDesktop extends Component {
                     />
                     </a>
                     </Grid>
-                    <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
                     <a href="https://www.tiktok.com/@pp_s_ksushey" target="_blank">
                     <img
                     src={tiktok} alt="tiktok"
@@ -311,7 +328,7 @@ export default class MoreDesktop extends Component {
                     />
                     </a>
                     </Grid>
-                    <Grid item xs={3} md={3} style={{marginTop: '40px'}}>
+                    <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
                     <a href="https://wa.me/380671272761?text=Здравствуйте!" target="_blank">
                     <img
                     src={whatsapp} alt="whatsapp"
@@ -335,3 +352,64 @@ export default class MoreDesktop extends Component {
     );
   }
 }
+
+
+                //     <div
+                //     style={{
+                //         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
+                //         // color: color,
+                //         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
+                //         paddingBottom: '8px', marginLeft:'auto', fontSize: '18px',
+                //         marginBottom: '32px', marginRight: 'auto',
+                //         WebkitBackdropFilter: 'blur(15px)', border: '1px solid rgba(247, 207, 186, 1)',
+                //     }}
+                //     >
+                //     <p
+                //     style={{
+                //         width: '200px', textAlign: 'center', fontSize: '14px',
+                //         marginLeft: 'auto', marginRight: 'auto',
+                //     }}
+                //     >
+                //         {get1}
+                //     </p>
+                //     </div>
+
+                //     <div
+                //     style={{
+                //         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
+                //         // color: color,
+                //         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
+                //         paddingBottom: '8px', marginLeft:'auto', WebkitBackdropFilter: 'blur(15px)', 
+                //         marginRight: 'auto', border: '1px solid rgba(247, 207, 186, 1)', marginBottom: '32px'
+                //     }}
+                //     >
+                //     <p
+                //     style={{
+                //         width: '200px', textAlign: 'center', fontSize: '14px',
+                //         marginLeft: 'auto', marginRight: 'auto',
+                //     }}
+                //     >
+                //         {get2}
+                //     </p>
+                //     </div>
+
+                //     <div
+                //     style={{
+                //         alignItems: 'center', borderRadius: '15px', backgroundColor: 'rgba(247, 207, 186, 0.75)',
+                //         // color: color,
+                //         display: 'inline-block', paddingLeft: '33px', paddingRight: '33px', paddingTop: '8px',
+                //         paddingBottom: '8px', marginLeft:'auto', WebkitBackdropFilter: 'blur(15px)',
+                //         marginLeft: 'auto', border: '1px solid rgba(247, 207, 186, 1)',
+                //     }}
+                //     >
+                //     <p
+                //     style={{
+                //         width: '200px', textAlign: 'center', fontSize: '14px',
+                //         marginLeft: 'auto', marginRight: 'auto',
+                //     }}
+                //     >
+                //         {get3}
+                //     </p>
+                //     </div>
+
+                // </div>

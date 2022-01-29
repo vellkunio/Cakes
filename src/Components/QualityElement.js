@@ -3,20 +3,24 @@ import React, { Component } from 'react';
 class QualityElement extends Component {
     render() {
         const {
-             name, text,
+             name, text, mrgLeft, mrgRight, mrgTop, mrgBottom, placement, position
         } = this.props
       return (
         <div>
-            <div style={{
+            <div 
+            data-aos={placement} data-aos-anchor-placement={position}
+            style={{
                 width: '270px',
                 height: '100px',
-                marginLeft: '30px',
-                marginRight: '30px',
+                marginLeft: mrgLeft,
+                marginRight: mrgRight,
                 borderRadius: '25px',
                 WebkitBackdropFilter: 'blur(25px)',
                 backdropFilter:'blur(25px)',
                 background: 'rgba(255, 255, 255, 0.15)',
                 border: '1px solid rgba(255, 255, 255, 50)',
+                marginTop: mrgTop,
+                marginBottom: mrgBottom
                 // borderImage: 'linear-gradient(to right, red, blue) 27 100%'
                 // borderImage: 'radial-gradient(137.5% 515.46% at 31.51% -37.5%, #FFFFFF 0%, rgba(255, 255, 255, 0.15) 100%)'
                 // WebkitBorderImage: 'WebkitGradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat'
@@ -24,7 +28,7 @@ class QualityElement extends Component {
             }}>
                
                <h6 style={{
-                   marginTop: '16px',
+                   marginTop: '24px',
                    fontSize: '18px',
                    lineHeight: '25px',
                    textAlign: 'center',

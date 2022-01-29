@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import CakeTypeElement from './CakeTypeElement';
+import CakeTypeElementMobile from './CakeTypeElementMobile';
 // import Example1 from '../images/Example1.png'
 import Example1 from '../images/girlCake.png'
 import Example2 from '../images/gruzin.png'
 import Example3 from '../images/heart1.png'
 import Example4 from '../images/cube.png'
+
+// import { Grid } from '@material-ui/core';
 
 
 
@@ -89,7 +92,7 @@ export default class TypesDesktop extends Component {
         }
         return (
             <div>
-                <div style={{marginTop: '40px'}}>
+                <div style={{marginTop: '40px', marginRight: 'auto', marginLeft: 'auto', alignItems: 'center'}}>
                     <h2 className='oswald'
                         style={{
                             letterSpacing: '0.15em',
@@ -111,66 +114,180 @@ export default class TypesDesktop extends Component {
                     }}>
                         {sectionUndername}
                     </p>
+                    {localStorage.screenSize > 1200 ? (
+                        <div>
+                            <div className='DESKTOP'                  
+                            style={{
+                                justifyContent: 'center',
+                                display: 'flex',
+                                }}>
+                                    
+                                <CakeTypeElement 
+                                name={name1}
+                                inside={filling1}
+                                feature={feature1}
+                                extra={extra1}
+                                price={'399'}
+                                image={Example1}
+                                place={'left'}
+                                count={'1'}
+                                />
 
-                    <div style={{
-                        justifyContent: 'center',
-                        display: 'flex',
-                    }}>
+                                <CakeTypeElement 
+                                name={name2}
+                                inside={filling2}
+                                feature={feature2}
+                                extra={extra2}
+                                price={'499'}
+                                image={Example2}
+                                place={'right'}
+                                count={'3'}
+                                />
+                            </div>
+                            
 
-                        <CakeTypeElement 
-                        name={name1}
-                        inside={filling1}
-                        feature={feature1}
-                        extra={extra1}
-                        price={'399'}
-                        image={Example1}
-                        place={'left'}
-                        count={'1'}
-                        />
+                            <div style={{
+                                justifyContent: 'center',
+                                display: 'flex',
+                                marginTop: '-50px'
+                            }}>
+                                <CakeTypeElement 
+                                name={name3}
+                                inside={filling3}
+                                feature={feature3}
+                                extra={extra3}
+                                price={'599'}
+                                image={Example3}
+                                place={'left'}
+                                count={'2'}
+                                />
+                                <CakeTypeElement 
+                                name={name4}
+                                inside={filling4}
+                                feature={feature4}
+                                extra={extra4}
+                                price={'449'}
+                                image={Example4}
+                                place={'right'}
+                                count={'4'}
+                                />
+                            </div>
+                        </div>
+                    ) : (
+                        <div>
+                            <div className='MOBILE' style={{
+                                justifyContent: 'center',
+                                display: 'inline-block',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                            }}>
+                                <CakeTypeElementMobile 
+                                name={name1}
+                                inside={filling1}
+                                feature={feature1}
+                                extra={extra1}
+                                price={'399'}
+                                image={Example1}
+                                place={'left'}
+                                count={'1'}
+                                />
 
-                        <CakeTypeElement 
-                        name={name2}
-                        inside={filling2}
-                        feature={feature2}
-                        extra={extra2}
-                        price={'499'}
-                        image={Example2}
-                        place={'right'}
-                        count={'3'}
-                        />
-                    </div>
+                                <CakeTypeElementMobile 
+                                name={name2}
+                                inside={filling2}
+                                feature={feature2}
+                                extra={extra2}
+                                price={'499'}
+                                image={Example2}
+                                place={'right'}
+                                count={'3'}
+                                />
 
-                    <div style={{
-                        justifyContent: 'center',
-                        display: 'flex',
-                        marginTop: '-50px'
-                    }}>
-
-                        <CakeTypeElement 
-                        name={name3}
-                        inside={filling3}
-                        feature={feature3}
-                        extra={extra3}
-                        price={'599'}
-                        image={Example3}
-                        place={'left'}
-                        count={'2'}
-                        />
-
-                        <CakeTypeElement 
-                        name={name4}
-                        inside={filling4}
-                        feature={feature4}
-                        extra={extra4}
-                        price={'449'}
-                        image={Example4}
-                        place={'right'}
-                        count={'4'}
-                        />
-                    </div>
-
+                                <CakeTypeElementMobile 
+                                name={name3}
+                                inside={filling3}
+                                feature={feature3}
+                                extra={extra3}
+                                price={'599'}
+                                image={Example3}
+                                place={'left'}
+                                count={'2'}
+                                />
+                                <CakeTypeElementMobile 
+                                name={name4}
+                                inside={filling4}
+                                feature={feature4}
+                                extra={extra4}
+                                price={'449'}
+                                image={Example4}
+                                place={'right'}
+                                count={'4'}
+                                />
+                            </div>
+                        </div>
+                    )}
+                    
                 </div>
             </div>
         )
     }
 }
+
+
+                    // <div style={{
+                    //     justifyContent: 'center',
+                    //     display: 'flex',
+                    // }}>
+
+
+                    //     <CakeTypeElement 
+                    //     name={name1}
+                    //     inside={filling1}
+                    //     feature={feature1}
+                    //     extra={extra1}
+                    //     price={'399'}
+                    //     image={Example1}
+                    //     place={'left'}
+                    //     count={'1'}
+                    //     />
+
+                    //     <CakeTypeElement 
+                    //     name={name2}
+                    //     inside={filling2}
+                    //     feature={feature2}
+                    //     extra={extra2}
+                    //     price={'499'}
+                    //     image={Example2}
+                    //     place={'right'}
+                    //     count={'3'}
+                    //     />
+                    // </div>
+
+                    // <div style={{
+                    //     justifyContent: 'center',
+                    //     display: 'flex',
+                    //     marginTop: '-50px'
+                    // }}>
+
+                    //     <CakeTypeElement 
+                    //     name={name3}
+                    //     inside={filling3}
+                    //     feature={feature3}
+                    //     extra={extra3}
+                    //     price={'599'}
+                    //     image={Example3}
+                    //     place={'left'}
+                    //     count={'2'}
+                    //     />
+
+                    //     <CakeTypeElement 
+                    //     name={name4}
+                    //     inside={filling4}
+                    //     feature={feature4}
+                    //     extra={extra4}
+                    //     price={'449'}
+                    //     image={Example4}
+                    //     place={'right'}
+                    //     count={'4'}
+                    //     />
+                    // </div>

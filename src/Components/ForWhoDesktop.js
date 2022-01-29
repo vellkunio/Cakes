@@ -64,7 +64,7 @@ export default class ForWhoDesktop extends Component {
             sectionName = 'For who?'
             name1 = 'Husband'
             name2 = 'Wife'
-            name3 = 'Parent'
+            name3 = 'Parents'
             name4 = 'Kid'
             name5 = 'Relatives'
             name6 = 'Friend'
@@ -87,7 +87,7 @@ export default class ForWhoDesktop extends Component {
         const pink= 'rgba(211, 146, 126, 0.5)';
         const blue= 'rgba(103, 104, 171, 0.25)';
         return (
-            <div style={{marginBottom: '500px'}}>
+            <div>
                 <h2 className='oswald'
                     style={{
                         letterSpacing: '0.15em',
@@ -99,8 +99,8 @@ export default class ForWhoDesktop extends Component {
                 >
                 {sectionName}
                 </h2>
-
-                <div>
+                {localStorage.screenSize > 600 ? (
+                <div className='DESKTOP'>
                     <ChartElement 
                     name={name1}
                     BGcolor={pink}
@@ -275,10 +275,199 @@ export default class ForWhoDesktop extends Component {
                     marginRight={''}
                     transform={'-4'}
                     />
-
-
-
                 </div>
+                ) : (
+                <div className='MOBILE' style={{marginTop: '150px'}}>
+                    <ChartElement 
+                    name={name1}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'240px'}
+                    marginBottom={''}
+                    marginLeft={'70px'}
+                    marginRight={''}
+                    transform={'-8'}
+                    />
+
+                    <ChartElement 
+                    name={name2}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'-30px'}
+                    marginBottom={''}
+                    marginLeft={'-155px'}
+                    marginRight={''}
+                    transform={'-10'}
+                    />
+
+                    <ChartElement 
+                    name={name3}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'40px'}
+                    marginBottom={''}
+                    marginLeft={'-200px'}
+                    marginRight={''}
+                    transform={'8'}
+                    />
+                    <ChartElement 
+                    name={name4}
+                    BGcolor={pink}
+                    color={'black'}
+                    marginTop={'-10px'}
+                    marginBottom={''}
+                    marginLeft={'-50px'}
+                    marginRight={''}
+                    transform={'-4'}
+                    />
+                    <ChartElement 
+                    name={name5}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'100px'}
+                    marginBottom={''}
+                    marginLeft={'-150px'}
+                    marginRight={''}
+                    transform={'0'}
+                    />
+
+                    <ChartElement 
+                    name={name6}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'170px'}
+                    marginBottom={''}
+                    marginLeft={'-170px'}
+                    marginRight={''}
+                    transform={'-8'}
+                    />
+                    
+                    <ChartElement 
+                    name={name7}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'220px'}
+                    marginBottom={''}
+                    marginLeft={'-100px'}
+                    marginRight={''}
+                    transform={'4'}
+                    />
+                    <ChartElement 
+                    name={name8}
+                    BGcolor={pink}
+                    color={'black'}
+                    marginTop={'-60px'}
+                    marginBottom={''}
+                    marginLeft={'20px'}
+                    marginRight={''}
+                    transform={'8'}
+                    />
+                    <ChartElement 
+                    name={name9}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'280px'}
+                    marginBottom={''}
+                    marginLeft={'-180px'}
+                    marginRight={''}
+                    transform={'-4'}
+                    />
+                    <ChartElement 
+                    name={name10}
+                    BGcolor={pink}
+                    color={'black'}
+                    marginTop={'480px'}
+                    marginBottom={''}
+                    marginLeft={'-180px'}
+                    marginRight={''}
+                    transform={'2'}
+                    />
+                    <ChartElement 
+                    name={name11}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'370px'}
+                    marginBottom={''}
+                    marginLeft={'-135px'}
+                    marginRight={''}
+                    transform={'4'}
+                    />
+                    <ChartElement 
+                    name={name12}
+                    BGcolor={blue}
+                    color={'black'}
+                    marginTop={'470px'}
+                    marginBottom={''}
+                    marginLeft={'0px'}
+                    marginRight={'30px'}
+                    transform={'-4'}
+                    />
+                    <ChartElement 
+                    name={name13}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'60px'}
+                    marginBottom={''}
+                    marginLeft={'0px'}
+                    marginRight={''}
+                    transform={'-8'}
+                    />
+                    <ChartElement 
+                    name={name14}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'400px'}
+                    marginBottom={''}
+                    marginLeft={'0px'}
+                    marginRight={''}
+                    transform={'0'}
+                    />
+                    <ChartElement 
+                    name={name15}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'-130px'}
+                    marginBottom={''}
+                    marginLeft={'-200px'}
+                    marginRight={''}
+                    transform={'-4'}
+                    />
+                    <ChartElement 
+                    name={name16}
+                    BGcolor={pink}
+                    color={'black'}
+                    marginTop={'320px'}
+                    marginBottom={''}
+                    marginLeft={'30px'}
+                    marginRight={''}
+                    transform={'-4'}
+                    />
+                    <ChartElement 
+                    name={name17}
+                    BGcolor={green}
+                    color={'black'}
+                    marginTop={'160px'}
+                    marginBottom={''}
+                    marginLeft={'20px'}
+                    marginRight={''}
+                    transform={'-4'}
+                    />
+                </div>
+                )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
 
 
             </div>

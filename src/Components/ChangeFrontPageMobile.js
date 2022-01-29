@@ -3,26 +3,26 @@ import { useTransition, animated, config, useSpring } from '@react-spring/web'
 import mainCake1 from '../images/mainCake1.png'
 import mainCake2 from '../images/mainCake2.png'
 
-export default function ChangeFrontPage() {
+export default function ChangeFrontPageMobile() {
 
     const styles1 = useSpring({
         loop: { reverse: true },
-        from: { x: 0, y: 0, opacity: '100%', transform: 'scale(1)' },
-        to: { x: 400, y: 100, opacity: '50%', transform: 'scale(0.75)' },
+        from: { x: -60, y: 0, opacity: '100%', transform: 'scale(1)' },
+        to: { x: 200, y: 100, opacity: '50%', transform: 'scale(0.75)' },
         delay: 5000,
       },
       );
 
     const styles2 = useSpring({
         loop: { reverse: true },
-        from: { x: 400, y: 100, opacity: '50%', transform: 'scale(0.75)' },
-        to: { x: 0, y: 0, opacity: '100%', transform: 'scale(1)' },
+        from: { x: 200, y: 100, opacity: '50%', transform: 'scale(0.75)' },
+        to: { x: -60, y: 0, opacity: '100%', transform: 'scale(1)' },
         delay: 5000,
       })
 
 
     return(
-        <div style={{marginTop: '-150px',}}>
+        <div style={{marginTop: '-90px',}}>
 
 
         {/* {transitions((open) => ( */}
@@ -40,7 +40,7 @@ export default function ChangeFrontPage() {
                 left: 0,
                 // height: '87.5vh',
                 // width: '58vw',
-                width: '800px',
+                width: '400px',
                 // width: imageWidth,
                 // height: open ? '50vh': '75vh'
                 }}
@@ -63,7 +63,7 @@ export default function ChangeFrontPage() {
                     left: 0,
                     // height: '87.5vh',
                     // width: '58vw'
-                    width: '800px'
+                    width: '400px'
                     // width: imageWidth
                     // height: '600px'
                     }}

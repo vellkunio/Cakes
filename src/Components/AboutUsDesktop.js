@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AOS from 'aos';
 
 class AboutUsDesktop extends Component {
     render() {
@@ -21,10 +22,28 @@ class AboutUsDesktop extends Component {
             text = `Our unique feature is that nothing is impossible for us. 
             Any, even the most complex cake will be made by our professionals`
         }
+
+        let fontSize = '120px'
+        let mrgTop = '100vh'
+        // let fontSize = '120px'
+
+        if(localStorage.screenSize > 1200){
+        fontSize = '120px'
+        mrgTop = '100vh'
+        } else if(localStorage.screenSize <= 1200 && localStorage.screenSize > 600){
+        fontSize = '80px'
+        mrgTop = '100vh'
+        } else {
+        fontSize = '64px'
+        mrgTop = '78vh'
+        }
+
       return (
         <div>
-            <div style={{marginTop: '100vh'}}>
+            <div style={{marginTop: mrgTop}} >
                 <h2 className='oswald'
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
                     style={{
                         letterSpacing: '0.15em',
                         fontSize: '48px',
@@ -35,11 +54,15 @@ class AboutUsDesktop extends Component {
                 </h2>
 
                 <p
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
                     style={{
                         fontSize:'18px',
                         lineHeight: '30px',
                         letterSpacing: '0.15em',
-                        width:'850px',
+                        width:'min(850px, 80%)',
+                        // width:'850px',
+                        // width:'80%',
                         marginLeft: 'auto',
                         marginRight: 'auto'
                     }}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class CakeTypeElement extends Component {
+export default class CakeTypeElementMobile extends Component {
     render() {
         let fillingWord = 'Начинка'
         let featureWord = 'Особенность'
@@ -33,15 +33,14 @@ export default class CakeTypeElement extends Component {
                 <div >
 
                     <div style={{
-                        width: '420px', 
+                        width: '320px', 
                         height: '210px',
-                        background: 'rgba(103, 104, 171, 0.15)',
-                        border: '1px solid #FFFFFF',
-                        // background: 'rgba(150, 150, 150, 0.1)',
-                        // border: '1px solid rgba(0, 0, 0, 0.15)',
+                        // background: 'rgba(255, 255, 255, 0.15)',
+                        background: 'rgba(150, 150, 150, 0.1)',
+                        border: '1px solid rgba(0, 0, 0, 0.15)',
                         // boxSizing: 'border-box',
                         borderRadius: '25px',
-                        // WebkitBackdropFilter: 'blur(25px)',
+                        WebkitBackdropFilter: 'blur(25px)', // maybe delete it
                         backdropFilter: 'blur(25px)',
                         marginLeft: '30px',
                         marginRight: '30px',
@@ -65,21 +64,21 @@ export default class CakeTypeElement extends Component {
                                 (
                                     count === '1' ? (
                                         <img
-                                        src={image} alt="inst"
+                                        src={image} alt="girl cake"
                                             style={{
                                                 position: 'absolute',
-                                                width: '150px',
-                                                marginLeft: '20px',
-                                                marginTop: '-180px'
+                                                width: '140px',
+                                                marginLeft: '-150px',
+                                                marginTop: '-160px',
                                             }}
                                         />
                                     ) : (
                                         <img
-                                        src={image} alt="inst"
+                                        src={image} alt="heart"
                                             style={{
                                                 position: 'absolute',
                                                 width: '280px',
-                                                marginLeft: '-40px',
+                                                marginLeft: '-220px',
                                                 marginTop: '-230px'
                                             }}
                                         />
@@ -92,7 +91,7 @@ export default class CakeTypeElement extends Component {
                                 ):(
                                     count === '3' ? (
                                     <img
-                                    src={image} alt="inst"
+                                    src={image} alt="goga cake"
                                         style={{
                                             position: 'absolute',
                                             width: '215px',
@@ -102,7 +101,7 @@ export default class CakeTypeElement extends Component {
                                     />
                                     ) : (
                                     <img
-                                    src={image} alt="inst"
+                                    src={image} alt="cube cake"
                                         style={{
                                             position: 'absolute',
                                             width: '160px',
@@ -118,23 +117,10 @@ export default class CakeTypeElement extends Component {
                         
 
 
-                            {place === 'left' ? 
-                                (<h5
-                                    style={{
-                                        fontSize: '20px',
-                                        lineHeight: '33px',
-                                        textAlign: 'left',
-                                        marginLeft: '33px',
-                                        marginTop: '22px',
-                                        marginBottom: '0px'
-                                    }}
-                                >
-                                    {name}
-                                </h5>) :
-                                (
+
                                     <h5
                                     style={{
-                                        fontSize: '20px',
+                                        fontSize: '18px',
                                         lineHeight: '33px',
                                         textAlign: 'right',
                                         marginRight: '33px',
@@ -144,15 +130,14 @@ export default class CakeTypeElement extends Component {
                                 >
                                     {name}
                                 </h5>
-                                )
-
-                            }
+                                
 
                         <p
                             style={{
                                 textAlign: 'left',
                                 marginLeft: '33px',
-                                marginBottom: '8px'
+                                marginBottom: '8px',
+                                fontSize: '13px'
                             }}
                         >
                             <b>{fillingWord}:</b> {inside}
@@ -164,6 +149,7 @@ export default class CakeTypeElement extends Component {
                                 marginLeft: '33px',
                                 marginTop: '0px',
                                 marginBottom: '8px',
+                                fontSize: '13px'
                             }}
                         >
                             <b>{featureWord}:</b> {feature}
@@ -175,6 +161,7 @@ export default class CakeTypeElement extends Component {
                                 marginLeft: '33px',
                                 marginTop: '0px',
                                 marginBottom: '8px',
+                                fontSize: '13px'
                             }}
                         >
                             <b>{extraWord}:</b> {extra}
