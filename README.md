@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+# About this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Technologies used
+
+* [React](https://reactjs.org/)
+* [Material-UI](https://mui.com/)
+* [AOS Animations](http://michalsnik.github.io/aos/)
+* [React-Spring](https://react-spring.io/)
+* [Smooth Scroll behavior polyfill](http://iamdustan.com/smoothscroll/)
+
+### Deskription
+
+Web application was made for a company that create high-end cakes with exclusive design. The Website uses GlassMorphism style with animation to make it seem alive. Website optimized for different screen sizes.
+
+### Photos
+
+###### Desktop Example
+
+![Desktop view](https://user-images.githubusercontent.com/35813564/151711228-b60f073f-9a30-4054-8dd5-d16909849828.png)
+
+###### Mobile Example
+
+![Mobile View](https://user-images.githubusercontent.com/35813564/151711374-c5054d7f-2b84-4347-96e7-c872df5d1577.png)
+
+### Features
+
+* Animations
+* 3 Languages to choose
+  * English
+  * Russian (Default)
+  * Ukrainian
+* High-quality resolution photos
+* Adaptive for different screens
+
+
+
+
+### To view the live version - click on [Preview](https://wow-cake-f02b2.web.app/).
 
 ## Available Scripts
 
@@ -38,33 +73,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
