@@ -223,7 +223,7 @@ export default class MoreDesktop extends Component {
                                 {subName1}
                             </p>
 
-                            <a href="tel:+12262241256">
+                            <a href="tel:+380672175181">
                             <img
                             src={phone} alt="Call icon"
                                 style={{
@@ -246,7 +246,7 @@ export default class MoreDesktop extends Component {
                                 {subName2}
                             </p>
 
-                            <a href="sms:+380671272761&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">
+                            <a href="sms:+380672175181&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">
                             <img
                             src={messages} alt="Message icon"
                                 style={{
@@ -307,7 +307,7 @@ export default class MoreDesktop extends Component {
                     </a>
                     </Grid>
                     <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
-                    <a href="https://t.me/vellkunio" target="_blank">
+                    <a href="https://t.me/OksanaVilkun" target="_blank">
                     <img
                     src={telegram} alt="telegram"
                         style={{
@@ -329,7 +329,7 @@ export default class MoreDesktop extends Component {
                     </a>
                     </Grid>
                     <Grid item xs={6} md={3} style={{marginTop: '40px'}}>
-                    <a href="https://wa.me/380671272761?text=Здравствуйте!" target="_blank">
+                    <a href="https://wa.me/380672175181?text=Здравствуйте!" target="_blank">
                     <img
                     src={whatsapp} alt="whatsapp"
                         style={{
