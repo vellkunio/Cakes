@@ -86,7 +86,7 @@ class ExamplesDesktop extends Component {
                                 fontSize:'18px',
                                 lineHeight: '30px',
                                 letterSpacing: '0.15em',
-                                width:'400px',
+                                width:'80vw',
                                 marginLeft: 'auto',
                                 marginRight: 'auto'
                             }}

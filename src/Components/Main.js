@@ -34,7 +34,7 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state ={
-        language: localStorage.language
+        language: 'RU'
     }
 }
 
@@ -60,7 +60,7 @@ componentDidMount() {
 // }
   render() {
     const windowWidth=window.screen.availWidth;
-    console.log(windowWidth);
+    // console.log(windowWidth);
 
     
     // this.setState({
